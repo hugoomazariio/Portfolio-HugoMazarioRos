@@ -1,35 +1,33 @@
 {
     "hero": {
-        "title": "I <span class='highlight-text-primary'>help</span> founders turn <span class='highlight-text-primary'> ideas</span> into seamless digital experiences",
-        "description": "Hello, I'm <span class='highlight-text-secondary'>Kintaro</span>, a Full-Stack Web Developer, crafting digital experiences that elevate your brand with modern engineering.",
-        "cta_primary": "Let's Connect",
-        "cta_secondary": "Projects",
-        "stats": "<span class='highlight-text-tertiary'>Startup</span> Ready Solutions",
-        "scroll": "Scroll Down"
+        "title": "Kurucuların <span class='highlight-text-primary'>fikirlerini</span> sorunsuz dijital deneyimlere dönüştürmelerine <span class='highlight-text-primary'>yardım ediyorum</span>",
+        "cta_primary": "İletişim",
+        "cta_secondary": "Projeler",
+        "stats": "<span class='highlight-text-tertiary'>Startup</span> Uyumlu Çözümler",
+        "scroll": "Aşağı Kaydır"
     },
     "about": {
-        "title": "About",
-        "intro": "I am a <span class='highlight-text-primary'>digital craftsman </span> focused on creating specific,<span class='highlight-text-tertiary'> immersive</span> experiences.",
-        "description": "Beyond just writing code, I architect digital solutions that bridge the gap between human intuition and technical precision. My philosophy is rooted in <span className='highlight-text-secondary'>Intentional Minimalism</span> —strip away the noise, amplify the signal.",
-        "full": "To me, digital development is more than just shipping features; it is a silent dialogue between the creator and the user. As a <span class='highlight-text-primary'>Digital Craftsman</span>, I view code as a medium for artistry, where technical precision serves as the foundation for human-centric experiences. My methodology is centered around <span class='highlight-text-secondary'>Intentional Minimalism</span>. In an era of digital noise, I believe the most powerful solutions aren't the loudest, but the most refined. I focus on stripping away the superfluous to <span class='highlight-text-tertiary'>amplify the core signal</span>, ensuring that every interaction is purposeful and every line of code adds value. I architect solutions where the gap between intuition and logic disappears. By balancing aesthetic elegance with robust performance, I build environments that feel natural rather than engineered. For me, the goal isn't just to build a product—it's to craft a legacy of clarity in an increasingly complex digital landscape.",
-        "cta": "Read Full Biography"
+        "title": "Hakkımda",
+        "intro": "<span class='highlight-text-primary'>Kendi projeleriyle gelişen</span> ve fikirleri <span class='highlight-text-secondary'>ürüne dönüştüren</span> bir geliştirici.",
+        "description": "<span class='highlight-text-primary'>Web geliştirme odağında</span>; frontend ve backend tarafında üretim yapan, yeni teknolojileri <span class='highlight-text-secondary'>deneyerek öğrenen</span> ve kodun <span class='highlight-text-tertiary'>sürdürülebilir olmasına</span> önem veren bir yaklaşım.",
+        "full": "Yazılımla son birkaç yıldır aktif olarak ilgileniyorum ve bu süreçte çoğunlukla kendi projelerim üzerinden ilerleyerek kendimi geliştirdim. Bir fikri alıp çalışır bir ürüne dönüştürme süreci benim en çok keyif aldığım kısım.<br/><br/>Genel olarak web geliştirme tarafında çalışıyorum. React, Next.js, Node.js, Express ve Laravel gibi teknolojilerle hem frontend hem backend tarafında projeler geliştirdim. MongoDB ve PostgreSQL ile veri yönetimi üzerine deneyim kazandım. Ayrıca C# ve WinForms ile masaüstü uygulamaları geliştirdim, son dönemde ise Tauri (Rust) ile daha hafif ve modern desktop uygulamalar denemeye başladım.<br/><br/>Bunların yanında zaman zaman ihtiyaca göre farklı araçlarla da çalışıyorum. Örneğin FFmpeg kullanarak medya işleme tarafında projeler yaptım. Yeni teknolojileri denemeyi seviyorum ve genelde bir şeyi en iyi öğrenme yolunun doğrudan kullanmak olduğunu düşünüyorum.<br/><br/>Projelerimde sadece “çalışması” yeterli gelmiyor; mümkün olduğunca temiz, anlaşılır ve sürdürülebilir olmasına dikkat ediyorum. Bir problemle karşılaştığımda hızlıca geçmek yerine biraz kurcalayıp mantığını çözmeye çalışıyorum.<br/><br/>Şu an hedefim, daha büyük ve gerçek dünya problemlerine dokunan projelerde yer almak ve kendimi özellikle backend ve sistem tasarımı tarafında daha da geliştirmek.",
+        "cta": "Tamamını Oku"
     },
     "manifesto": {
         "items": [
-            "RADICAL TRANSPARENCY",
-            "INTENTIONAL MINIMALISM",
-            "ARCHITECTURAL INTEGRITY",
-            "FIRST PRINCIPLES THINKING",
-            "PERFORMANCE WITHOUT COMPROMISE",
-            "SCALABLE VISION"
+            "RADİKAL ŞEFFAFLIK",
+            "BİLİNÇLİ MİNİMALİZM",
+            "MİMARİ BÜTÜNLÜK",
+            "İLK İLKELERLE DÜŞÜNME",
+            "TAVİZSİZ PERFORMANS",
+            "ÖLÇEKLENEBİLİR VİZYON"
         ]
     },
     "stack": {
-        "title": "STACK",
-        "description": "The technologies and tools I use to bring ideas to life.",
+        "title": "Teknolojiler",
         "items": [
             {
-                "title": "Frontend Technologies",
+                "title": "Frontend",
                 "items": [
                     {
                         "name": "React",
@@ -52,10 +50,6 @@
                         "icon": "https://cdn.simpleicons.org/framer"
                     },
                     {
-                        "name": "Three.js",
-                        "icon": "https://cdn.simpleicons.org/threedotjs"
-                    },
-                    {
                         "name": "TypeScript",
                         "icon": "https://cdn.simpleicons.org/typescript"
                     },
@@ -74,7 +68,7 @@
                 ]
             },
             {
-                "title": "Backend Technologies",
+                "title": "Backend",
                 "items": [
                     {
                         "name": "Node.js",
@@ -126,22 +120,18 @@
                         "icon": "https://cdn.simpleicons.org/mongodb"
                     },
                     {
-                        "name": "Redis",
-                        "icon": "https://cdn.simpleicons.org/redis"
-                    },
-                    {
                         "name": "Prisma",
                         "icon": "https://cdn.simpleicons.org/prisma"
+                    },
+                    {
+                        "name": "Neon",
+                        "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/neon-tech.png"
                     }
                 ]
             },
             {
                 "title": "Tools & Infrastructure",
                 "items": [
-                    {
-                        "name": "Docker",
-                        "icon": "https://cdn.simpleicons.org/docker"
-                    },
                     {
                         "name": "Git",
                         "icon": "https://cdn.simpleicons.org/git"
@@ -159,113 +149,124 @@
         ]
     },
     "projects": {
-        "title": "PROJECTS",
-        "intro": "A collection of <span class='highlight-text-primary'>experiments</span>, <span class='highlight-text-primary'>products</span>, and <span class='highlight-text-primary'>digital artifacts</span> forged in the <span class='highlight-text-secondary'>void</span>.",
-        "scroll_text": "SCROLL TO EXPLORE",
-        "end_text": "END",
+        "title": "PROJELER",
+        "intro": "<span class='highlight-text-primary'>deneyler</span>, <span class='highlight-text-primary'>ürünler</span> ve <span class='highlight-text-primary'>dijital eserlerden</span> oluşan, <span class='highlight-text-secondary'>boşlukta</span> şekillendirilmiş bir koleksiyon.",
+        "scroll_text": "KEŞFETMEK İÇİN KAYDIR",
+        "end_text": "SON",
         "items": [
             {
                 "id": "1",
-                "title": "NEBULA",
-                "category": "AI INTERFACE",
-                "year": "2025",
-                "description": "Generative intelligence dashboard with real-time neural visualization.",
-                "image": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop",
-                "demo": "https://github.com/xkintaro/nebula",
-                "repo": "https://github.com/xkintaro/aether",
+                "title": "Aether Media",
+                "category": "Medya Aracı",
+                "year": "2026",
+                "description": "Aether Media, Tauri ile geliştirilmiş güçlü bir masaüstü medya dönüştürücüsüdür. Toplu işlem desteğiyle video, görsel ve ses format dönüşümlerini destekler.",
+                "image": "/md/20260427093247885.jpg",
+                "repo": "https://github.com/xkintaro/aether-media",
                 "stack": [
-                    "rust",
-                    "python"
+                    "FFmpeg",
+                    "Rust",
+                    "Tauri",
+                    "React",
+                    "TailwindCSS"
                 ]
             },
             {
                 "id": "2",
-                "title": "VORTEX",
-                "category": "DEFI PROTOCOL",
-                "year": "2024",
-                "description": "Next-gen liquidity pooling with algorithmic yield optimization.",
-                "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2032&auto=format&fit=crop",
-                "demo": "https://github.com/xkintaro/vortex",
-                "repo": "https://github.com/xkintaro/aether",
+                "title": "Aether JS",
+                "category": "Kütüphane",
+                "year": "2026",
+                "description": "AetherJS, modern web uygulamaları için geliştirilmiş, DOM manipülasyonunu en aza indiren utility-first bir JavaScript kontrolcüsüdür. Karmaşık state yönetimine veda edin.",
+                "image": "/md/20260427093247620.jpg",
+                "demo": "https://xkintaro.github.io/aether-js-documentation/en.html",
+                "repo": "https://github.com/xkintaro/aether-js",
                 "stack": [
-                    "rust",
-                    "python"
+                    "JavaScript"
                 ]
             },
             {
                 "id": "3",
-                "title": "AETHER",
-                "category": "SPATIAL COMPUTING",
-                "year": "2024",
-                "description": "OS for the spatial web. Gestural interaction on a boundless canvas.",
-                "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
-                "demo": "https://github.com/xkintaro/aether",
-                "repo": "https://github.com/xkintaro/aether",
+                "title": "File Manager",
+                "category": "Web Uygulaması",
+                "year": "2025",
+                "description": "Kintaro File Manager, cyberpunk esintili arayüze sahip, self-hosted bir dosya yönetim uygulamasıdır. SQLite destekli modern ve şık bir web arayüzü üzerinden her tür dosyayı yüklemenize, düzenlemenize, etiketlemenize ve filtrelemenize olanak tanır — harici bir veritabanı gerekmez.",
+                "image": "/md/20260305210513749.jpg",
+                "repo": "https://github.com/xkintaro/file-manager",
                 "stack": [
-                    "rust",
-                    "python"
+                    "React",
+                    "TailwindCSS",
+                    "Node.js",
+                    "SQLite"
                 ]
             }
         ]
     },
     "roadmap": {
-        "title": "ROADMAP",
+        "title": "Yol Haritası",
+        "description": "Yazılım yolculuğum boyunca edindiğim tecrübeleri ve öğrendiğim teknolojileri paylaştığım bir yol haritası.",
         "items": [
             {
                 "id": "01",
                 "year": "2022",
-                "description": "The inception of the digital conscious. Core systems online.",
+                "description": "Yazılıma ilk defa lisede başladım. Nesne tabanlı programlama dersinde, C# kullanarak programlamanın temellerini ve mantığını öğrendim.",
                 "tags": [
-                    "SYSTEM",
-                    "CORE"
+                    "C#"
                 ]
             },
             {
                 "id": "02",
                 "year": "2023",
-                "description": "Establishing high-bandwidth interfaces between user and machine.",
+                "description": "HTML, CSS ve ASP.NET öğrenerek statik ve dinamik web siteleri yapmaya başladım. Ayrıca projelerimde veritabanı kullanmayı da öğrendim.",
                 "tags": [
-                    "INTERFACE",
-                    "NETWORK"
+                    "HTML",
+                    "CSS",
+                    "ASP.NET",
+                    "MySQL"
                 ]
             },
             {
                 "id": "03",
                 "year": "2024",
-                "description": "Scaling vector databases to accommodate infinite context windows.",
+                "description": "Lisedeki son yılımdı. CSS ile arayüz kodlama konusunda kendimi tamamen geliştirdim ve staj yaptığım yerde ASP.NET yazmaya devam ediyordum.",
                 "tags": [
-                    "SCALING",
-                    "DATABASE"
+                    "HTML",
+                    "CSS",
+                    "ASP.NET",
+                    "MySQL"
                 ]
             },
             {
                 "id": "04",
                 "year": "2025",
-                "description": "Achieving autonomous self-improvement cycles.",
+                "description": "Lise bittikten sonra React, Node.js, Tailwind CSS ve MongoDB gibi teknolojilere yöneldim. Öğrenme sürecimde birçok web sitesi ve uygulama geliştirdim. Ek olarak, Python ile kendi kullanımım için basit araçlar da yazmaya başladım.",
                 "tags": [
-                    "AI",
-                    "AUTONOMY"
+                    "React",
+                    "Node.js",
+                    "TailwindCSS",
+                    "MongoDB"
                 ]
             },
             {
                 "id": "05",
                 "year": "2026",
-                "description": "Breaking the silicon barrier. Bio-digital convergence.",
+                "description": "Şu an PostAjans adında bir yerde staj yapıyorum. Burada Laravel üzerine yoğunlaştım. Ek olarak, boş zamanlarımda Next.js ile web siteleri geliştiriyor; yapay zekânın da yardımıyla, bir dili tamamen bilmesem de Rust, Tauri ve FFmpeg gibi çeşitli teknolojilerle projeler üretiyorum.",
                 "tags": [
-                    "UNKNOWN"
+                    "Laravel",
+                    "Next.js",
+                    "PostgreSQL"
                 ]
             }
         ]
     },
     "contact": {
-        "title": "CONTACT",
-        "email": "hello@kintaro.dev",
-        "phone": "+90 530 837 27 77",
-        "send_email": "Send an Email",
-        "direct_line": "Direct Line",
-        "all_rights_reserved": "ALL RIGHTS RESERVED.",
-        "modal_title": "Let's Connect",
-        "modal_description": "Send me a message and I'll get back to you as soon as possible."
+        "title": "İletişim",
+        "description": "İster bir projeyi hayata geçirmek için yeni bir başlangıç yapalım, ister mevcut bir sistemi daha ileri taşıyalım.",
+        "email": "mustafw42@gmail.com",
+        "phone": "Henüz eklenmedi.",
+        "send_email": "E-posta Gönder",
+        "direct_line": "Telefon Numarası",
+        "all_rights_reserved": "TÜM HAKLARI SAKLIDIR.",
+        "modal_title": "İletişim Bilgilerim",
+        "modal_description": "Bana bir mesaj gönderin, en kısa sürede size geri dönüş yapayım."
     },
     "social": {
         "title": "SOCIAL",
@@ -277,19 +278,14 @@
             {
                 "label": "Discord",
                 "href": "https://discord.gg/NSQk27Zdkv"
-            },
-            {
-                "label": "Instagram",
-                "href": "https://instagram.com/xkintaro"
             }
         ]
     },
     "others": {
-        "coming_soon": "Coming Soon.",
-        "about_project": "About the Project",
-        "technologies": "Technologies",
-        "live_demo": "Live Demo",
-        "source_code": "Source Code",
-        "project_details": "Details about"
+        "about_project": "Proje Hakkında",
+        "technologies": "Teknolojiler",
+        "live_demo": "Canlı Demo",
+        "source_code": "Kaynak Kodları",
+        "project_details": "Proje Detayları"
     }
 }

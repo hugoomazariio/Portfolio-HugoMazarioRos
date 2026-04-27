@@ -1,7 +1,6 @@
 {
     "hero": {
         "title": "I <span class='highlight-text-primary'>help</span> founders turn <span class='highlight-text-primary'> ideas</span> into seamless digital experiences",
-        "description": "Hello, I'm <span class='highlight-text-secondary'>Kintaro</span>, a Full-Stack Web Developer, crafting digital experiences that elevate your brand with modern engineering.",
         "cta_primary": "Let's Connect",
         "cta_secondary": "Projects",
         "stats": "<span class='highlight-text-tertiary'>Startup</span> Ready Solutions",
@@ -9,10 +8,10 @@
     },
     "about": {
         "title": "About",
-        "intro": "I am a <span class='highlight-text-primary'>digital craftsman </span> focused on creating specific,<span class='highlight-text-tertiary'> immersive</span> experiences.",
-        "description": "Beyond just writing code, I architect digital solutions that bridge the gap between human intuition and technical precision. My philosophy is rooted in <span className='highlight-text-secondary'>Intentional Minimalism</span> —strip away the noise, amplify the signal.",
-        "full": "To me, digital development is more than just shipping features; it is a silent dialogue between the creator and the user. As a <span class='highlight-text-primary'>Digital Craftsman</span>, I view code as a medium for artistry, where technical precision serves as the foundation for human-centric experiences. My methodology is centered around <span class='highlight-text-secondary'>Intentional Minimalism</span>. In an era of digital noise, I believe the most powerful solutions aren't the loudest, but the most refined. I focus on stripping away the superfluous to <span class='highlight-text-tertiary'>amplify the core signal</span>, ensuring that every interaction is purposeful and every line of code adds value. I architect solutions where the gap between intuition and logic disappears. By balancing aesthetic elegance with robust performance, I build environments that feel natural rather than engineered. For me, the goal isn't just to build a product—it's to craft a legacy of clarity in an increasingly complex digital landscape.",
-        "cta": "Read Full Biography"
+        "intro": "A developer who grows through <span class='highlight-text-primary'>self-driven projects</span> and turns ideas into <span class='highlight-text-secondary'>real products</span>.",
+        "description": "A <span class='highlight-text-primary'>web development-focused</span> mindset; building on both frontend and backend, learning new technologies through <span class='highlight-text-secondary'>hands-on experimentation</span>, and prioritizing <span class='highlight-text-tertiary'>maintainable code</span>.",
+        "full": "I have been actively involved in software development for the past few years, mostly improving myself through my own projects. Turning an idea into a working product is the part I enjoy the most.<br/><br/>I mainly work in web development. I have built projects using technologies such as React, Next.js, Node.js, Express, and Laravel, working on both frontend and backend. I also gained experience in data management with MongoDB and PostgreSQL. Additionally, I developed desktop applications using C# and WinForms, and more recently started experimenting with lightweight modern desktop apps using Tauri (Rust).<br/><br/>Depending on the need, I also work with different tools. For example, I have built projects involving media processing using FFmpeg. I enjoy exploring new technologies, and I generally believe the best way to learn something is by using it directly.<br/><br/>In my projects, I don’t consider it enough for something to just “work”; I try to keep things as clean, understandable, and maintainable as possible. When I face a problem, instead of quickly moving on, I prefer to dig into it and understand how it actually works.<br/><br/>My current goal is to work on larger, real-world impactful projects and further improve myself, especially in backend development and system design.",
+        "cta": "Read Full Version"
     },
     "manifesto": {
         "items": [
@@ -26,7 +25,6 @@
     },
     "stack": {
         "title": "STACK",
-        "description": "The technologies and tools I use to bring ideas to life.",
         "items": [
             {
                 "title": "Frontend Technologies",
@@ -50,10 +48,6 @@
                     {
                         "name": "Framer Motion",
                         "icon": "https://cdn.simpleicons.org/framer"
-                    },
-                    {
-                        "name": "Three.js",
-                        "icon": "https://cdn.simpleicons.org/threedotjs"
                     },
                     {
                         "name": "TypeScript",
@@ -126,22 +120,18 @@
                         "icon": "https://cdn.simpleicons.org/mongodb"
                     },
                     {
-                        "name": "Redis",
-                        "icon": "https://cdn.simpleicons.org/redis"
-                    },
-                    {
                         "name": "Prisma",
                         "icon": "https://cdn.simpleicons.org/prisma"
+                    },
+                    {
+                        "name": "Neon",
+                        "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/neon-tech.png"
                     }
                 ]
             },
             {
                 "title": "Tools & Infrastructure",
                 "items": [
-                    {
-                        "name": "Docker",
-                        "icon": "https://cdn.simpleicons.org/docker"
-                    },
                     {
                         "name": "Git",
                         "icon": "https://cdn.simpleicons.org/git"
@@ -166,101 +156,112 @@
         "items": [
             {
                 "id": "1",
-                "title": "NEBULA",
-                "category": "AI INTERFACE",
-                "year": "2025",
-                "description": "Generative intelligence dashboard with real-time neural visualization.",
-                "image": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop",
-                "demo": "https://github.com/xkintaro/nebula",
-                "repo": "https://github.com/xkintaro/aether",
+                "title": "Aether Media",
+                "category": "Media Tool",
+                "year": "2026",
+                "description": "Aether Media is a powerful desktop media converter built with Tauri, supporting video, image and audio format conversions with batch processing.",
+                "image": "/md/20260427093247885.jpg",
+                "repo": "https://github.com/xkintaro/aether-media",
                 "stack": [
-                    "rust",
-                    "python"
+                    "FFmpeg",
+                    "Rust",
+                    "Tauri",
+                    "React",
+                    "TailwindCSS"
                 ]
             },
             {
                 "id": "2",
-                "title": "VORTEX",
-                "category": "DEFI PROTOCOL",
-                "year": "2024",
-                "description": "Next-gen liquidity pooling with algorithmic yield optimization.",
-                "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2032&auto=format&fit=crop",
-                "demo": "https://github.com/xkintaro/vortex",
-                "repo": "https://github.com/xkintaro/aether",
+                "title": "Aether JS",
+                "category": "Library",
+                "year": "2026",
+                "description": "AetherJS is a utility-first JavaScript controller built for modern web applications, minimizing DOM manipulation. Say goodbye to complex state management.",
+                "image": "/md/20260427093247620.jpg",
+                "demo": "https://xkintaro.github.io/aether-js-documentation/en.html",
+                "repo": "https://github.com/xkintaro/aether-js",
                 "stack": [
-                    "rust",
-                    "python"
+                    "JavaScript"
                 ]
             },
             {
                 "id": "3",
-                "title": "AETHER",
-                "category": "SPATIAL COMPUTING",
-                "year": "2024",
-                "description": "OS for the spatial web. Gestural interaction on a boundless canvas.",
-                "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
-                "demo": "https://github.com/xkintaro/aether",
-                "repo": "https://github.com/xkintaro/aether",
+                "title": "File Manager",
+                "category": "Web Application",
+                "year": "2025",
+                "description": "Kintaro File Manager is a self-hosted file management application with a cyberpunk-inspired interface. It lets you upload, organize, tag, and filter any type of file through a sleek, modern web interface backed by SQLite — no external database required.",
+                "image": "/md/20260305210513749.jpg",
+                "repo": "https://github.com/xkintaro/file-manager",
                 "stack": [
-                    "rust",
-                    "python"
+                    "React",
+                    "TailwindCSS",
+                    "Node.js",
+                    "SQLite"
                 ]
             }
         ]
     },
     "roadmap": {
-        "title": "ROADMAP",
+        "title": "Roadmap",
+        "description": "A roadmap where I share the experiences I’ve gained throughout my software journey and the technologies I’ve learned.",
         "items": [
             {
                 "id": "01",
                 "year": "2022",
-                "description": "The inception of the digital conscious. Core systems online.",
+                "description": "I first started programming in high school. In an object-oriented programming course, I learned the fundamentals and logic of programming using C#.",
                 "tags": [
-                    "SYSTEM",
-                    "CORE"
+                    "C#"
                 ]
             },
             {
                 "id": "02",
                 "year": "2023",
-                "description": "Establishing high-bandwidth interfaces between user and machine.",
+                "description": "I began building static and dynamic websites by learning HTML, CSS, and ASP.NET. I also learned how to use databases in my projects.",
                 "tags": [
-                    "INTERFACE",
-                    "NETWORK"
+                    "HTML",
+                    "CSS",
+                    "ASP.NET",
+                    "MySQL"
                 ]
             },
             {
                 "id": "03",
                 "year": "2024",
-                "description": "Scaling vector databases to accommodate infinite context windows.",
+                "description": "It was my final year of high school. I fully improved myself in UI development with CSS and continued writing ASP.NET at the place where I was doing my internship.",
                 "tags": [
-                    "SCALING",
-                    "DATABASE"
+                    "HTML",
+                    "CSS",
+                    "ASP.NET",
+                    "MySQL"
                 ]
             },
             {
                 "id": "04",
                 "year": "2025",
-                "description": "Achieving autonomous self-improvement cycles.",
+                "description": "After graduating from high school, I focused on technologies such as React, Node.js, Tailwind CSS, and MongoDB. During my learning process, I developed many websites and applications. Additionally, I started writing simple tools in Python for my own use.",
                 "tags": [
-                    "AI",
-                    "AUTONOMY"
+                    "React",
+                    "Node.js",
+                    "TailwindCSS",
+                    "MongoDB"
                 ]
             },
             {
                 "id": "05",
                 "year": "2026",
-                "description": "Breaking the silicon barrier. Bio-digital convergence.",
+                "description": "I am currently doing an internship at a place called PostAjans. Here, I have focused on Laravel. Additionally, in my free time, I develop websites with Next.js; with the help of AI, even if I do not fully know a language, I create projects using various technologies such as Rust, Tauri, and FFmpeg.",
                 "tags": [
-                    "UNKNOWN"
+                    "Laravel",
+                    "Next.js",
+                    "PostgreSQL"
                 ]
             }
         ]
     },
     "contact": {
         "title": "CONTACT",
-        "email": "hello@kintaro.dev",
-        "phone": "+90 530 837 27 77",
+        "description": "Whether we start fresh to bring a project to life or take an existing system further.",
+        "email": "mustafw42@gmail.com",
+        "phone": "Not added yet.",
         "send_email": "Send an Email",
         "direct_line": "Direct Line",
         "all_rights_reserved": "ALL RIGHTS RESERVED.",
@@ -277,15 +278,10 @@
             {
                 "label": "Discord",
                 "href": "https://discord.gg/NSQk27Zdkv"
-            },
-            {
-                "label": "Instagram",
-                "href": "https://instagram.com/xkintaro"
             }
         ]
     },
     "others": {
-        "coming_soon": "Coming Soon.",
         "about_project": "About the Project",
         "technologies": "Technologies",
         "live_demo": "Live Demo",
