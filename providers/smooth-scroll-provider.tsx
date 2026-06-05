@@ -24,14 +24,17 @@ export default function SmoothScroll({
 
     setLenis(lenisInstance);
 
+    let rafId: number;
+
     function raf(time: number) {
       lenisInstance.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
     return () => {
+      cancelAnimationFrame(rafId);
       lenisInstance.destroy();
       setLenis(null);
     };
