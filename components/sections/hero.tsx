@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, useCallback } from "react";
+import Image from "next/image";
 import { useScroll, useTransform, useMotionTemplate, motion } from "framer-motion";
 import { useLanguage } from "@/providers/language-provider";
 import { ArrowRight, Mouse } from "lucide-react";
@@ -58,7 +59,7 @@ export default function Hero() {
                 style={{ opacity }}
                 className="absolute top-0 right-6 sm:right-12 md:right-16 lg:right-24 xl:right-36 2xl:right-48 bottom-0 h-full w-55 sm:w-65 md:w-85 lg:w-100 xl:w-110 2xl:w-120 flex gap-3 sm:gap-4 px-2 overflow-hidden z-5 pointer-events-none select-none opacity-[0.22] dark:opacity-[0.28] mix-blend-luminosity"
             >
-                <div className="max-sm:hidden flex-1 h-full overflow-hidden relative">
+                <div className="max-md:hidden flex-1 h-full overflow-hidden relative">
                     <motion.div
                         animate={{ y: ["0%", "-50%"] }}
                         transition={{
@@ -70,18 +71,20 @@ export default function Hero() {
                     >
                         {col1Images.map((src, idx) => (
                             <div key={idx} className="w-full aspect-3/4 relative overflow-hidden rounded-4xl border border-border/5">
-                                <img
+                                <Image
                                     src={src}
-                                    alt="Portrait Up"
-                                    onError={(e) => { e.currentTarget.src = "/me.jpg"; }}
-                                    className="w-full h-full object-cover object-center grayscale contrast-[1.08] brightness-[0.8]"
+                                    alt="Portrait"
+                                    fill
+                                    sizes="(max-width: 640px) 50vw, (max-width: 1280px) 25vw, 15vw"
+                                    loading="lazy"
+                                    className="object-cover object-center grayscale contrast-[1.08] brightness-[0.8]"
                                 />
                             </div>
                         ))}
                     </motion.div>
                 </div>
 
-                <div className="max-sm:opacity-50 flex-1 h-full overflow-hidden relative">
+                <div className="max-md:opacity-50 flex-1 h-full overflow-hidden relative">
                     <motion.div
                         animate={{ y: ["-50%", "0%"] }}
                         transition={{
@@ -93,11 +96,13 @@ export default function Hero() {
                     >
                         {col2Images.map((src, idx) => (
                             <div key={idx} className="w-full aspect-3/4 relative overflow-hidden rounded-4xl border border-border/5">
-                                <img
+                                <Image
                                     src={src}
-                                    alt="Portrait Down"
-                                    onError={(e) => { e.currentTarget.src = "/me.jpg"; }}
-                                    className="w-full h-full object-cover object-center grayscale contrast-[1.08] brightness-[0.8]"
+                                    alt="Portrait"
+                                    fill
+                                    sizes="(max-width: 640px) 90vw, (max-width: 1280px) 25vw, 15vw"
+                                    loading="lazy"
+                                    className="object-cover object-center grayscale contrast-[1.08] brightness-[0.8]"
                                 />
                             </div>
                         ))}
