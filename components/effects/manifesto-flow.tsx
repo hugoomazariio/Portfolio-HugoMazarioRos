@@ -2,14 +2,14 @@
 
 import { useLanguage } from "@/providers/language-provider";
 
+const Separator = () => (
+    <div className="aspect-square h-3 w-3 rounded-full bg-foreground/10 sm:h-4 sm:w-4 md:h-5 md:w-5 xl:h-6 xl:w-6" />
+);
+
 export default function ManifestoFlow({ reverse = false }: { reverse?: boolean }) {
   const { content } = useLanguage();
 
   const manifestoItems = content?.manifesto?.items;
-
-  const Separator = () => (
-    <div className="aspect-square h-3 w-3 rounded-full bg-foreground/10 sm:h-4 sm:w-4 md:h-5 md:w-5 xl:h-6 xl:w-6" />
-  );
 
   return (
     <div className="relative w-full overflow-hidden border-y border-border/50 py-10 select-none pointer-events-none bg-background/50 backdrop-blur-sm">
