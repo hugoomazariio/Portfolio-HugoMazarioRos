@@ -13,7 +13,8 @@ export function InteractiveParticles() {
         const ctx = canvas.getContext("2d");
         if (!ctx) return;
 
-        let animationFrameId: number;
+        let animationFrameId = 0;
+        let isVisible = false;
         let particles: Particle[] = [];
         let cachedRect = canvas.getBoundingClientRect();
         let cachedDpr = window.devicePixelRatio || 1;
@@ -126,7 +127,24 @@ export function InteractiveParticles() {
             }
         };
 
+        const startLoop = () => {
+            if (animationFrameId) return;
+            animationFrameId = requestAnimationFrame(animate);
+        };
+
+        const stopLoop = () => {
+            if (animationFrameId) {
+                cancelAnimationFrame(animationFrameId);
+                animationFrameId = 0;
+            }
+        };
+
         const animate = () => {
+            if (!isVisible) {
+                animationFrameId = 0;
+                return;
+            }
+
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             const mouse = mouseRef.current;
@@ -138,6 +156,19 @@ export function InteractiveParticles() {
 
             animationFrameId = requestAnimationFrame(animate);
         };
+
+        const visibilityObserver = new IntersectionObserver(
+            ([entry]) => {
+                isVisible = entry.isIntersecting;
+                if (isVisible) {
+                    startLoop();
+                } else {
+                    stopLoop();
+                }
+            },
+            { threshold: 0 }
+        );
+        visibilityObserver.observe(canvas);
 
         const handleMouseMove = (e: MouseEvent) => {
             mouseRef.current.x = (e.clientX - cachedRect.left) * cachedDpr;
@@ -154,13 +185,13 @@ export function InteractiveParticles() {
         window.addEventListener("mouseleave", handleMouseLeave);
 
         resizeCanvas();
-        animate();
 
         return () => {
             window.removeEventListener("resize", resizeCanvas);
             window.removeEventListener("mousemove", handleMouseMove);
             window.removeEventListener("mouseleave", handleMouseLeave);
-            cancelAnimationFrame(animationFrameId);
+            stopLoop();
+            visibilityObserver.disconnect();
             themeObserver.disconnect();
         };
     }, []);
