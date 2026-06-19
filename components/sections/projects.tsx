@@ -220,7 +220,7 @@ const ProjectCard = React.memo(({ project, onClick }: { project: ProjectItem; on
                             </div>
                         </div>
 
-                        <h3 className="absolute bottom-6 xl:bottom-12 left-6 xl:left-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter uppercase text-foreground opacity-10 group-hover:opacity-100 transition-opacity duration-500 delay-100 pointer-events-none">
+                        <h3 className="absolute bottom-6 md:bottom-8 2xl:bottom-12 left-6 md:left-8 2xl:left-12 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black tracking-tighter uppercase text-foreground opacity-10 group-hover:opacity-100 transition-opacity duration-500 delay-100 pointer-events-none">
                             {project.title}
                         </h3>
                     </div>
