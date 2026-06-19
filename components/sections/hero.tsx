@@ -116,7 +116,7 @@ export default function Hero() {
 
             <motion.div
                 style={{ opacity, scale, y, filter }}
-                className="relative z-20 flex-1 flex flex-col gap-6 sm:gap-12 xl:gap-16 justify-end w-full h-full will-change-[opacity,transform,filter]"
+                className="relative z-20 flex-1 flex flex-col gap-6 sm:gap-8 xl:gap-12 justify-end w-full h-full will-change-[opacity,transform,filter]"
             >
 
                 <div className="flex justify-between items-start w-full">
@@ -147,7 +147,7 @@ export default function Hero() {
 
                 <div className="w-full mt-auto flex flex-col justify-center relative z-20 mix-blend-difference">
                     <div className="overflow-hidden">
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[140px] font-black tracking-tighter leading-[0.85] text-foreground uppercase whitespace-nowrap">
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl 3xl:text-[140px] font-black tracking-tighter leading-[0.85] text-foreground uppercase whitespace-nowrap">
                             Kintaro
                             <br />
                             <span className="text-foreground/80">
@@ -157,7 +157,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="space-y-6 sm:space-y-10">
+                <div className="space-y-6 sm:space-y-8 xl:space-y-10">
                     <p className="sm:text-lg 2xl:text-xl text-muted-foreground font-light leading-relaxed max-w-xl mix-blend-difference">
                         {content.about.description}
                     </p>
