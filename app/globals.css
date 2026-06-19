@@ -34,11 +34,18 @@
 
 @media (min-width: 1536px) {
   :root {
+    --container-spacing: 4rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
     --container-spacing: 5rem;
   }
 }
 
 @theme inline {
+  --breakpoint-3xl: 1920px;
   --spacing-container: var(--container-spacing);
   --animate-scroll: scroll 60s linear infinite;
 }
