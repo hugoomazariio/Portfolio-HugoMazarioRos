@@ -1,4 +1,6 @@
 {
+    "contact_me": "İletişim",
+    "explore_projects": "Projelerim",
     "nav": {
         "home": "Ana Sayfa",
         "about": "Hakkımda",
@@ -6,11 +8,6 @@
         "projects": "Projeler",
         "roadmap": "Yol Haritası",
         "contact": "İletişim"
-    },
-    "hero": {
-        "cta_primary": "İletişim",
-        "cta_secondary": "Projeler",
-        "scroll": "Aşağı Kaydır"
     },
     "about": {
         "title": "Hakkımda",

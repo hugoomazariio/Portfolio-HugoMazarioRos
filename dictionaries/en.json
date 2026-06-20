@@ -1,4 +1,6 @@
 {
+    "contact_me": "Contact Me",
+    "explore_projects": "Explore Projects",
     "nav": {
         "home": "Home",
         "about": "About",
@@ -6,11 +8,6 @@
         "projects": "Projects",
         "roadmap": "Roadmap",
         "contact": "Contact"
-    },
-    "hero": {
-        "cta_primary": "Connect",
-        "cta_secondary": "Explore Works",
-        "scroll": "Scroll Down"
     },
     "about": {
         "title": "About",

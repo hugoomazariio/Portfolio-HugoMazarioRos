@@ -171,7 +171,7 @@ export default function Hero() {
                                 <div className="relative h-full w-8 bg-background/20 dark:bg-foreground/10" />
                             </div>
                             <span className="relative z-10 flex items-center gap-2 xl:gap-3 text-xs xl:text-base font-semibold tracking-[0.15em] uppercase">
-                                {content.hero.cta_primary}
+                                {content.contact_me}
                                 <ArrowRight className="w-3.5 xl:w-5 h-3.5 xl:h-5 transition-transform duration-500 group-hover:translate-x-1" />
                             </span>
                         </button>
@@ -182,7 +182,7 @@ export default function Hero() {
                         >
                             <span className="relative z-10 text-xs xl:text-base font-semibold tracking-[0.15em] uppercase flex items-center gap-2 xl:gap-3">
                                 <Mouse className="w-3.5 xl:w-5 h-3.5 xl:h-5 opacity-50 group-hover:opacity-100 transition-opacity" />
-                                {content.hero.cta_secondary}
+                                {content.explore_projects}
                             </span>
                         </button>
                     </div>
