@@ -34,10 +34,6 @@
   <br />
 </div>
 
-## ❤️ Thank you for your support!
-
-Seeing this project receive stars and forks recently has made me really happy. I originally built it just for myself. I know that changing the personal information to use it in your own portfolio might be a bit inconvenient. To solve this, I'll be working on improvements to make customization easier.
-
 ## 📋 About
 
 **Kintarowwards** is an open-source, highly interactive personal portfolio template inspired by top-tier Awwwards-winning websites. It features smooth scrolling, physics-based micro-interactions, dynamic theme switching, and a fully multilingual system designed to deliver a premium user experience. Every detail is crafted to leave a lasting impression while maintaining high performance and clean code standards.
