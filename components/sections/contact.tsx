@@ -23,12 +23,12 @@ export default function Contact() {
 
                         <BlurReveal>
                             <h2 className="title">
-                                {dict.contact_title}
+                                {dict.contactTitle}
                             </h2>
                         </BlurReveal>
                         <BlurReveal>
                             <p className="text-lg mt-3 max-w-xl italic font-medium tracking-tight text-foreground/60">
-                                {dict.contact_intro_text}
+                                {dict.contactIntroText}
                             </p>
                         </BlurReveal>
                     </div>
@@ -41,7 +41,7 @@ export default function Contact() {
                             className="group flex flex-col md:flex-row md:items-center justify-between py-10 md:py-14 border-b border-border/50 transition-all duration-700 hover:px-8"
                         >
                             <span className="text-sm font-mono tracking-widest text-muted-foreground uppercase mb-4 md:mb-0 transition-colors duration-500 group-hover:text-foreground">
-                                {dict.send_email}
+                                {dict.sendEmail}
                             </span>
                             <div className="flex items-center gap-8">
                                 <span className="text-2xl lg:text-3xl font-semibold tracking-tight text-foreground transition-all duration-500 group-hover:text-primary group-hover:scale-[1.02] origin-left md:origin-right">
@@ -59,7 +59,7 @@ export default function Contact() {
                             className="group flex flex-col md:flex-row md:items-center justify-between py-10 md:py-14 border-b border-border/50 transition-all duration-700 hover:px-8"
                         >
                             <span className="text-sm font-mono tracking-widest text-muted-foreground uppercase mb-4 md:mb-0 transition-colors duration-500 group-hover:text-foreground">
-                                {dict.direct_line}
+                                {dict.directLine}
                             </span>
                             <div className="flex items-center gap-8">
                                 <span className="text-2xl lg:text-3xl font-semibold tracking-tight text-foreground transition-all duration-500 group-hover:text-primary group-hover:scale-[1.02] origin-left md:origin-right">
@@ -78,7 +78,7 @@ export default function Contact() {
                     <div className="text-sm font-mono tracking-widest text-muted-foreground uppercase flex items-center gap-4 max-xl:hidden">
                         <span>© 2026</span>
                         <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
-                        <span>KINTARO. {dict.all_rights_reserved}</span>
+                        <span>KINTARO. {dict.allRightsReserved}</span>
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-4">

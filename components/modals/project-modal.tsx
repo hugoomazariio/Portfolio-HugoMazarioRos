@@ -32,7 +32,7 @@ export function ProjectModal({ open, onOpenChange, project }: ProjectModalProps)
             >
                 <DialogHeader className="sr-only">
                     <DialogTitle>{project.title}</DialogTitle>
-                    <DialogDescription>{dict.project_details} {project.title}</DialogDescription>
+                    <DialogDescription>{dict.projectDetails} {project.title}</DialogDescription>
                 </DialogHeader>
 
                 <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent z-10" />
@@ -67,7 +67,7 @@ export function ProjectModal({ open, onOpenChange, project }: ProjectModalProps)
 
                     <div className="p-6 sm:p-10 flex flex-col gap-10">
                         <div>
-                            <h3 className="text-sm tracking-widest text-muted-foreground uppercase mb-4">{dict.about_project}</h3>
+                            <h3 className="text-sm tracking-widest text-muted-foreground uppercase mb-4">{dict.aboutProject}</h3>
                             <p className="text-lg text-foreground/80 leading-relaxed font-light">
                                 {project.description}
                             </p>
@@ -102,7 +102,7 @@ export function ProjectModal({ open, onOpenChange, project }: ProjectModalProps)
                                             <div className="relative h-full w-8 bg-background/20 dark:bg-foreground/10" />
                                         </div>
                                         <span className="relative z-10 flex items-center gap-2 text-xs sm:text-sm font-medium tracking-widest uppercase">
-                                            {dict.live_demo}
+                                            {dict.liveDemo}
                                             <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
                                         </span>
                                     </a>
@@ -119,7 +119,7 @@ export function ProjectModal({ open, onOpenChange, project }: ProjectModalProps)
                                             <div className="relative h-full w-8 bg-foreground/10 dark:bg-background/20" />
                                         </div>
                                         <span className="relative z-10 flex items-center gap-2 text-xs sm:text-sm font-medium tracking-widest uppercase">
-                                            {dict.source_code}
+                                            {dict.sourceCode}
                                             <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110" />
                                         </span>
                                     </a>

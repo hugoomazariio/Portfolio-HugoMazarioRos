@@ -28,7 +28,7 @@ export function AboutModal({ open, onOpenChange }: AboutModalProps) {
                 <div className="relative px-8 pt-8 pb-4 shrink-0">
                     <DialogHeader className="gap-3">
                         <DialogTitle className="text-2xl font-bold tracking-tight">
-                            {dict.about_title}
+                            {dict.aboutTitle}
                         </DialogTitle>
                     </DialogHeader>
                 </div>

@@ -30,10 +30,10 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                 <div className="relative px-8 pt-8 pb-4 shrink-0">
                     <DialogHeader className="gap-3">
                         <DialogTitle className="text-2xl font-bold tracking-tight">
-                            {dict.contact_modal_title}
+                            {dict.contactModalTitle}
                         </DialogTitle>
                         <DialogDescription className="text-muted-foreground text-sm leading-relaxed">
-                            {dict.contact_modal_description}
+                            {dict.contactModalDescription}
                         </DialogDescription>
                     </DialogHeader>
                 </div>
