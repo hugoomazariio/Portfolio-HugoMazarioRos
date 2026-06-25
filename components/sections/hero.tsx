@@ -77,7 +77,7 @@ export default function Hero() {
                                     alt="Portrait"
                                     fill
                                     sizes="(max-width: 768px) 0px, (max-width: 1280px) 20vw, 12vw"
-                                    {...(idx < 2 ? { priority: true } : { loading: "lazy" as const })}
+                                    priority
                                     className="object-cover object-center grayscale contrast-[1.08] brightness-[0.8]"
                                 />
                             </div>
@@ -102,7 +102,7 @@ export default function Hero() {
                                     alt="Portrait"
                                     fill
                                     sizes="(max-width: 640px) 45vw, (max-width: 1280px) 20vw, 12vw"
-                                    {...(idx < 2 ? { priority: true } : { loading: "lazy" as const })}
+                                    priority
                                     className="object-cover object-center grayscale contrast-[1.08] brightness-[0.8]"
                                 />
                             </div>
