@@ -8,7 +8,7 @@ export function CustomCursor() {
     const isVisibleRef = useRef(false);
     const [isVisible, setIsVisible] = useState(false);
     const [isHovering, setIsHovering] = useState(false);
-    const [isMounted, setIsMounted] = useState(false);
+    const [isEnabled, setIsEnabled] = useState(false);
 
     const cursorX = useMotionValue(-100);
     const cursorY = useMotionValue(-100);
@@ -18,8 +18,8 @@ export function CustomCursor() {
     const cursorYSpring = useSpring(cursorY, springConfig);
 
     useEffect(() => {
-        setIsMounted(true);
         if (window.matchMedia("(pointer: coarse)").matches) return;
+        setIsEnabled(true);
 
         const moveCursor = (e: MouseEvent) => {
             cursorX.set(e.clientX);
@@ -67,11 +67,7 @@ export function CustomCursor() {
         };
     }, [cursorX, cursorY]);
 
-    if (!isMounted) return null;
-
-    if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) {
-        return null;
-    }
+    if (!isEnabled) return null;
 
     return (
         <motion.div
