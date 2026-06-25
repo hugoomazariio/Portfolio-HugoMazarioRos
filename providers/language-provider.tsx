@@ -2,7 +2,8 @@
 
 import { createContext, useContext, useMemo } from "react";
 import type { Locale } from "@/lib/i18n";
-import { deepMerge, parseMarkdown } from "@/lib/markdown";
+import { parseMarkdown } from "@/lib/markdown";
+import { deepMerge } from "@/lib/utils";
 
 interface LanguageContextType {
     language: Locale;
