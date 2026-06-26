@@ -17,6 +17,7 @@ export default function Navbar() {
   const [containerWidth, setContainerWidth] = useState(1280);
   const [scrollHeight, setScrollHeight] = useState(800);
   const dummyRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
 
   const { scrollY } = useScroll();
 
@@ -84,16 +85,21 @@ export default function Navbar() {
       setIsMobileMenuOpen(false);
 
       setTimeout(() => {
+        const navbarHeight = headerRef.current ? headerRef.current.offsetHeight : 80;
+
         if (lenis) {
           lenis.scrollTo(targetId === "home" ? 0 : elem!, {
-            offset: targetId === "home" ? 0 : -80,
+            offset: targetId === "home" ? 0 : -navbarHeight,
             duration: 1.5,
           });
         } else {
           if (targetId === "home") {
             window.scrollTo({ top: 0, behavior: "smooth" });
-          } else {
-            elem?.scrollIntoView({
+          } else if (elem) {
+            const rect = elem.getBoundingClientRect();
+            const offsetPosition = rect.top + window.scrollY - navbarHeight;
+            window.scrollTo({
+              top: offsetPosition,
               behavior: "smooth",
             });
           }
@@ -104,6 +110,7 @@ export default function Navbar() {
 
   return (
     <motion.header
+      ref={headerRef}
       style={{
         paddingTop: py,
         paddingBottom: py,
