@@ -64,20 +64,6 @@
 
 ---
 
-### F11: Sosyal Link Butonları — Tekrarlanan UI Deseni
-- **Kategori:** Yeniden Kullanım Fırsatı
-- **Şiddet:** Düşük
-- **Etki:** Bakım kolaylığı, kod boyutu
-- **Kanıt:** `contact.tsx:87-101`, `contact-modal.tsx:70-85`, `project-modal.tsx:95-126` — Hepsi aynı "shine effect" buton pattern'ini tekrarlıyor
-- **Neden verimsiz:** Aynı CSS class seti ve shine animasyonu 5+ yerde kopyalanmış. Bir değişiklik tüm yerlerde güncelleme gerektirir.
-- **Önerilen düzeltme:** `ShineButton` gibi bir shared component oluştur
-- **Takas/Risk:** Küçük refactor, test gerektirir
-- **Beklenen etki:** ~200 satır kod azalması, bakım kolaylığı
-- **Kaldırma Güvenliği:** Güvenli
-- **Yeniden Kullanım Kapsamı:** Proje geneli
-
----
-
 ### F13: `my-notes.txt` — Repo'da Kişisel Not Dosyası
 - **Kategori:** Dead Code / Repo Hijyen
 - **Şiddet:** Düşük

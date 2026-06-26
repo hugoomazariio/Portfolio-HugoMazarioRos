@@ -11,6 +11,7 @@ import { useLanguage } from "@/providers/language-provider";
 import { Github, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import type { ProjectItem } from "@/types/project";
+import { ShineButton } from "@/components/ui/shine-button";
 
 interface ProjectModalProps {
     open: boolean;
@@ -92,37 +93,29 @@ export function ProjectModal({ open, onOpenChange, project }: ProjectModalProps)
                         {(project.demo || project.repo) && (
                             <div className="flex flex-wrap gap-4 pt-4 border-t border-border/50">
                                 {project.demo && (
-                                    <a
+                                    <ShineButton
                                         href={project.demo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="group relative flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-full border border-border/50 bg-foreground px-6 sm:px-8 text-background transition-all duration-500 ease-out hover:bg-background hover:border-foreground/30 hover:text-foreground shadow-lg hover:-translate-y-1"
+                                        className="h-12 bg-foreground px-6 sm:px-8 text-background hover:bg-background hover:text-foreground shadow-lg hover:-translate-y-1"
+                                        shineClassName="w-8 bg-background/20 dark:bg-foreground/10"
                                     >
-                                        <div className="absolute inset-0 flex h-full w-full justify-center -translate-x-full -skew-x-13 group-hover:duration-1000 group-hover:translate-x-full">
-                                            <div className="relative h-full w-8 bg-background/20 dark:bg-foreground/10" />
-                                        </div>
                                         <span className="relative z-10 flex items-center gap-2 text-xs sm:text-sm font-medium tracking-widest uppercase">
                                             {dict.liveDemo}
                                             <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
                                         </span>
-                                    </a>
+                                    </ShineButton>
                                 )}
 
                                 {project.repo && (
-                                    <a
+                                    <ShineButton
                                         href={project.repo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="group relative flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-full border border-border/50 bg-secondary/10 backdrop-blur-md px-6 sm:px-8 text-foreground transition-all duration-500 ease-out hover:bg-foreground hover:border-foreground/30 hover:text-background shadow-sm hover:-translate-y-1"
+                                        className="h-12 bg-secondary/10 backdrop-blur-md px-6 sm:px-8 text-foreground hover:bg-foreground hover:text-background shadow-sm hover:-translate-y-1"
+                                        shineClassName="w-8 bg-foreground/10 dark:bg-background/20"
                                     >
-                                        <div className="absolute inset-0 flex h-full w-full justify-center -translate-x-full -skew-x-13 group-hover:duration-1000 group-hover:translate-x-full">
-                                            <div className="relative h-full w-8 bg-foreground/10 dark:bg-background/20" />
-                                        </div>
                                         <span className="relative z-10 flex items-center gap-2 text-xs sm:text-sm font-medium tracking-widest uppercase">
                                             {dict.sourceCode}
                                             <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110" />
                                         </span>
-                                    </a>
+                                    </ShineButton>
                                 )}
                             </div>
                         )}

@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/providers/language-provider";
 import { BlurReveal } from "@/components/effects/blur-reveal";
 import { sanitizePhone } from "@/lib/utils";
+import { ShineButton } from "@/components/ui/shine-button";
 
 export default function Contact() {
     const { content, dict } = useLanguage();
@@ -85,20 +86,16 @@ export default function Contact() {
                     <div className="flex flex-wrap items-center justify-center gap-4">
                         {content.social.map((link: any) => (
                             <BlurReveal key={link.label}>
-                                <a
+                                <ShineButton
                                     href={link.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="group relative flex h-14 cursor-pointer items-center justify-center overflow-hidden rounded-full border border-border/50 bg-background px-8 text-foreground transition-all duration-500 hover:bg-foreground hover:text-background hover:border-foreground/30 shadow-sm"
+                                    className="h-14 px-8"
+                                    shineClassName="w-6 bg-background/20 dark:bg-background/20"
                                 >
-                                    <div className="absolute inset-0 flex h-full w-full justify-center -translate-x-full -skew-x-13 group-hover:duration-1000 group-hover:translate-x-full">
-                                        <div className="relative h-full w-6 bg-background/20 dark:bg-background/20" />
-                                    </div>
                                     <span className="relative z-10 flex items-center gap-3 text-sm font-medium tracking-widest uppercase">
                                         {link.label}
                                         <ArrowUpRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
                                     </span>
-                                </a>
+                                </ShineButton>
                             </BlurReveal>
                         ))}
                     </div>
