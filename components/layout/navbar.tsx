@@ -85,7 +85,16 @@ export default function Navbar() {
       setIsMobileMenuOpen(false);
 
       setTimeout(() => {
-        const navbarHeight = headerRef.current ? headerRef.current.offsetHeight : 80;
+        let navbarHeight = 80;
+        if (headerRef.current) {
+          const currentHeight = headerRef.current.offsetHeight;
+          const currentScroll = window.scrollY;
+          const currentPy = currentScroll >= scrollHeight 
+            ? 12 
+            : 24 - (currentScroll / scrollHeight) * 12;
+          const heightDifference = (currentPy - 12) * 2;
+          navbarHeight = Math.max(currentHeight - heightDifference, 0);
+        }
 
         if (lenis) {
           lenis.scrollTo(targetId === "home" ? 0 : elem!, {
