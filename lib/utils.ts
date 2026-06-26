@@ -16,3 +16,7 @@ export function deepMerge(target: any, source: any): any {
     }
     return result;
 }
+
+export function sanitizePhone(phone: string): string {
+    return phone.replace(/\s+/g, "");
+}

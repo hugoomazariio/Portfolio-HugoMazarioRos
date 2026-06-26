@@ -9,6 +9,7 @@ import {
 import { useLanguage } from "@/providers/language-provider";
 import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import { useLenisModal } from "@/hooks/use-lenis-modal";
+import { sanitizePhone } from "@/lib/utils";
 
 interface ContactModalProps {
     open: boolean;
@@ -53,7 +54,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                         </a>
 
                         <a
-                            href={`tel:${content.contact.phone.replace(/\s+/g, '')}`}
+                            href={`tel:${sanitizePhone(content.contact.phone)}`}
                             className="group flex items-center gap-4 px-5 py-2.5 rounded-full border border-border/50 bg-secondary/20 backdrop-blur-sm hover:bg-foreground hover:border-foreground/30 transition-all duration-500 ease-out"
                         >
                             <div className="w-8 h-8 rounded-full border border-border/50 bg-background flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-background transition-transform duration-500">
