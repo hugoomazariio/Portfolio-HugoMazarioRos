@@ -7,7 +7,6 @@ import { LanguageProvider } from "@/providers/language-provider";
 import { Preloader } from "@/components/layout/preloader";
 import { CustomCursor } from "@/components/layout/custom-cursor";
 import Navbar from "@/components/layout/navbar";
-import { APP_CONFIG } from "@/lib/constants";
 import { isValidLocale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { getDictionary, getContents, getSharedData } from "@/lib/loaders";
@@ -16,8 +15,8 @@ const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: APP_CONFIG.NAME,
-  description: APP_CONFIG.DESC,
+  title: "Kintarowwwards",
+  description: "Creative Developer Portfolio",
 };
 
 export function generateStaticParams() {
