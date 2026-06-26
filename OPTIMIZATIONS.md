@@ -31,39 +31,6 @@
 
 ---
 
-### F8: LanguageProvider — `parseMarkdown` Her Render'da Tüm Veriyi İşliyor
-- **Kategori:** CPU / Algoritma
-- **Şiddet:** Düşük
-- **Etki:** İlk render gecikmesi (küçük veri seti olduğu için minimal)
-- **Kanıt:** `language-provider.tsx:24-31` — `useMemo(() => parseMarkdown(dictionary))` + `deepMerge(shared, contents)`
-- **Neden verimsiz:** `parseMarkdown` recursive olarak tüm JSON ağacını geziyor ve string'lerde regex çalıştırıyor. Şu anki veri boyutuyla sorun yok ama veri büyürse sorun olabilir.
-- **Önerilen düzeltme:** Şu an aksiyon gerekmez. Veri 10x büyürse, build-time markdown pre-processing düşünülebilir.
-- **Takas/Risk:** Yok
-- **Beklenen etki:** Gelecekte ölçeklenebilirlik
-- **Kaldırma Güvenliği:** N/A
-- **Yeniden Kullanım Kapsamı:** Modül geneli
-
----
-
-### F10: next.config.ts — Boş Konfigürasyon
-- **Kategori:** Build / Frontend
-- **Şiddet:** Orta
-- **Etki:** Bundle boyutu, görsel optimizasyonu
-- **Kanıt:** `next.config.ts` — tamamen boş `{}`
-- **Neden verimsiz:** `images.formats` ayarlanmamış (AVIF desteği kapalı), `compiler.removeConsole` yok (prod'da console.log kalır).
-- **Önerilen düzeltme:**
-  ```ts
-  const nextConfig: NextConfig = {
-    images: { formats: ['image/avif', 'image/webp'] },
-  };
-  ```
-- **Takas/Risk:** AVIF encoding daha yavaş build, ama daha küçük dosyalar
-- **Beklenen etki:** Görsel boyutlarında ~%20-40 azalma
-- **Kaldırma Güvenliği:** Güvenli
-- **Yeniden Kullanım Kapsamı:** Proje geneli
-
----
-
 ### F13: `my-notes.txt` — Repo'da Kişisel Not Dosyası
 - **Kategori:** Dead Code / Repo Hijyen
 - **Şiddet:** Düşük
