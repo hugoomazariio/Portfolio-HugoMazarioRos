@@ -37,7 +37,7 @@
     "liveDemo": "Canlı Demo",
     "sourceCode": "Kaynak Kodları",
     "notFound": {
-        "title": "SAYFA BULUNAMADI",
+        "title": "Sayfa Bulunamadı",
         "description": "Aradığınız sayfa kaldırılmış, adı değiştirilmiş veya geçici olarak kullanım dışı kalmış olabilir.",
         "goHome": "Ana Sayfaya Dön"
     }
