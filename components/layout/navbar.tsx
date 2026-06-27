@@ -128,7 +128,7 @@ export default function Navbar() {
         paddingTop: py,
         paddingBottom: py,
       }}
-      className="fixed top-0 left-0 right-0 z-[100] transition-colors duration-300"
+      className="fixed top-0 left-0 right-0 z-100 transition-colors duration-300"
     >
       <div ref={dummyRef} className="container invisible absolute pointer-events-none -z-50" />
 
@@ -150,7 +150,7 @@ export default function Navbar() {
         <Link
           href="#home"
           onClick={(e) => scrollToSection(e, "#home")}
-          className="relative z-[110] flex items-center gap-2 group"
+          className="relative z-110 flex items-center gap-2 group"
         >
           <span className="text-xl sm:text-2xl font-black tracking-tighter uppercase text-foreground transition-all duration-300 group-hover:opacity-70">
             kintaro
@@ -182,7 +182,7 @@ export default function Navbar() {
         <div className="flex xl:hidden items-center gap-4">
           <button
             onClick={() => setIsMobileMenuOpen(prev => !prev)}
-            className="relative z-[110] p-2 text-foreground focus:outline-none"
+            className="relative z-110 p-2 text-foreground focus:outline-none"
             aria-label="Toggle Menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -197,7 +197,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-[90] bg-background xl:hidden flex flex-col h-[100dvh] w-screen"
+            className="fixed inset-0 z-90 bg-background xl:hidden flex flex-col h-dvh w-screen"
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(var(--primary-rgb),0.05),transparent)] pointer-events-none" />
             <div className="absolute inset-0 bg-grid-white/[0.02] pointer-events-none" />

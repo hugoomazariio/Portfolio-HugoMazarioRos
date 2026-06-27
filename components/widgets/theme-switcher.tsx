@@ -27,7 +27,7 @@ export default function ThemeSwitcher() {
           <span className="sr-only">Toggle theme</span>
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="z-[120] bg-background/95 backdrop-blur-xl border-border/50 shadow-2xl rounded-2xl min-w-[140px] p-2">
+      <DropdownMenuContent align="end" className="z-120 bg-background/95 backdrop-blur-xl border-border/50 shadow-2xl rounded-2xl min-w-[140px] p-2">
         <DropdownMenuItem onClick={() => setTheme("light")} className="rounded-xl cursor-pointer my-0.5 focus:bg-secondary">
           <Sun className="mr-2 h-3.5 w-3.5" />
           <span className="text-xs tracking-widest uppercase">Light</span>

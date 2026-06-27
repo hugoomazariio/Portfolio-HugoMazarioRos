@@ -34,7 +34,7 @@ export default function LanguageSwitcher() {
                     <span className="sr-only">Switch Language</span>
                 </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="z-[120] bg-background/95 backdrop-blur-xl border-border/50 shadow-2xl rounded-2xl min-w-[140px] p-2">
+            <DropdownMenuContent align="end" className="z-120 bg-background/95 backdrop-blur-xl border-border/50 shadow-2xl rounded-2xl min-w-[140px] p-2">
                 <DropdownMenuItem asChild className="rounded-xl cursor-pointer my-0.5 focus:bg-secondary">
                     <Link href={getLocalizedPath("en")}>
                         <span className={cn("mr-2 flex h-3.5 w-3.5 items-center justify-center")}>
