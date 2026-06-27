@@ -35,7 +35,7 @@ export default function Roadmap() {
                 className="absolute top-0 left-0 right-0 bottom-0 pointer-events-none flex items-center justify-center opacity-[0.02] z-0 overflow-hidden"
             >
                 <div className="text-[20vw] font-black tracking-tighter uppercase whitespace-nowrap">
-                    {dict.roadmapTitle}
+                    {dict.title.roadmap}
                 </div>
             </motion.div>
 
@@ -50,7 +50,7 @@ export default function Roadmap() {
 
                     <BlurReveal>
                         <h2 className="title">
-                            {dict.roadmapTitle}
+                            {dict.title.roadmap}
                         </h2>
                     </BlurReveal>
 

@@ -101,7 +101,7 @@ export default function Projects() {
 
                             <BlurReveal>
                                 <h2 className="title">
-                                    {dict.projectsTitle}
+                                    {dict.title.projects}
                                 </h2>
                             </BlurReveal>
 
@@ -139,7 +139,7 @@ export default function Projects() {
 
                                 <BlurReveal>
                                     <h2 className="title">
-                                        {dict.projectsTitle}
+                                        {dict.title.projects}
                                     </h2>
                                 </BlurReveal>
 

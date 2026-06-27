@@ -42,7 +42,7 @@ export default function Stack() {
                     </BlurReveal>
 
                     <BlurReveal>
-                        <h2 className="title">{dict.stackTitle}</h2>
+                        <h2 className="title">{dict.title.stack}</h2>
                     </BlurReveal>
                 </div>
 

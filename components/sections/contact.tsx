@@ -25,7 +25,7 @@ export default function Contact() {
 
                         <BlurReveal>
                             <h2 className="title">
-                                {dict.contactTitle}
+                                {dict.title.contact}
                             </h2>
                         </BlurReveal>
                         <BlurReveal>

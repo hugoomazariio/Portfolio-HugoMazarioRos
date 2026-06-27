@@ -27,7 +27,7 @@ export default function About() {
 
                             <BlurReveal>
                                 <h2 className="title relative z-10">
-                                    {dict.aboutTitle}
+                                    {dict.title.about}
                                 </h2>
                             </BlurReveal>
 
