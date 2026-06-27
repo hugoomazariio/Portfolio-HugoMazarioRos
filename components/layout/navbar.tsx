@@ -119,7 +119,7 @@ export default function Navbar() {
         }
       }, 100);
     }
-  }, [lenis, dimensions.scrollHeight]);
+  }, [lenis, dimensions.scrollHeight, dimensions.screenWidth]);
 
   return (
     <motion.header

@@ -19,7 +19,10 @@ export function CustomCursor() {
 
     useEffect(() => {
         if (window.matchMedia("(pointer: coarse)").matches) return;
-        setIsEnabled(true);
+        
+        const frameId = requestAnimationFrame(() => {
+            setIsEnabled(true);
+        });
 
         const moveCursor = (e: MouseEvent) => {
             cursorX.set(e.clientX);
@@ -60,6 +63,7 @@ export function CustomCursor() {
         document.addEventListener("mouseenter", handleMouseEnter);
 
         return () => {
+            cancelAnimationFrame(frameId);
             window.removeEventListener("mousemove", moveCursor);
             window.removeEventListener("mouseover", handleMouseOver);
             document.removeEventListener("mouseleave", handleMouseLeave);

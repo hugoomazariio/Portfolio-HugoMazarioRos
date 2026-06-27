@@ -2,6 +2,79 @@
 
 import { useEffect, useRef } from "react";
 
+class Particle {
+    x: number;
+    y: number;
+    vx: number;
+    vy: number;
+    baseVx: number;
+    baseVy: number;
+    radius: number;
+    alpha: number;
+
+    constructor(w: number, h: number, dpr: number) {
+        this.x = Math.random() * w;
+        this.y = Math.random() * h;
+        this.baseVx = (Math.random() - 0.5) * 0.6 * dpr;
+        this.baseVy = (Math.random() - 0.5) * 0.6 * dpr;
+        this.vx = this.baseVx;
+        this.vy = this.baseVy;
+        this.radius = (Math.random() * 1.5 + 0.5) * dpr;
+        this.alpha = Math.random() * 0.5 + 0.15;
+    }
+
+    update(w: number, h: number, mouse: { x: number; y: number; radius: number }, dpr: number) {
+        if (this.x < 0 || this.x > w) {
+            this.baseVx *= -1;
+            this.vx *= -1;
+            this.x = Math.max(0, Math.min(this.x, w));
+        }
+        if (this.y < 0 || this.y > h) {
+            this.baseVy *= -1;
+            this.vy *= -1;
+            this.y = Math.max(0, Math.min(this.y, h));
+        }
+
+        const dx = mouse.x - this.x;
+        const dy = mouse.y - this.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < mouse.radius) {
+            const forceDirectionX = dx / dist;
+            const forceDirectionY = dy / dist;
+            const force = (mouse.radius - dist) / mouse.radius;
+
+            const pushX = -forceDirectionX * force * 3 * dpr;
+            const pushY = -forceDirectionY * force * 3 * dpr;
+
+            this.vx += pushX;
+            this.vy += pushY;
+        }
+
+        this.vx += (this.baseVx - this.vx) * 0.04;
+        this.vy += (this.baseVy - this.vy) * 0.04;
+
+        const currentSpeed = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
+        const maxSpeed = 4 * dpr;
+        if (currentSpeed > maxSpeed) {
+            this.vx = (this.vx / currentSpeed) * maxSpeed;
+            this.vy = (this.vy / currentSpeed) * maxSpeed;
+        }
+
+        this.x += this.vx;
+        this.y += this.vy;
+    }
+
+    draw(ctx: CanvasRenderingContext2D, isDark: boolean) {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = isDark
+            ? `rgba(255, 255, 255, ${this.alpha})`
+            : `rgba(0, 0, 0, ${this.alpha})`;
+        ctx.fill();
+    }
+}
+
 export function InteractiveParticles() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const mouseRef = useRef({ x: -1000, y: -1000, radius: 150 });
@@ -27,79 +100,6 @@ export function InteractiveParticles() {
             attributes: true,
             attributeFilter: ['class'],
         });
-
-        class Particle {
-            x: number;
-            y: number;
-            vx: number;
-            vy: number;
-            baseVx: number;
-            baseVy: number;
-            radius: number;
-            alpha: number;
-
-            constructor(w: number, h: number, dpr: number) {
-                this.x = Math.random() * w;
-                this.y = Math.random() * h;
-                this.baseVx = (Math.random() - 0.5) * 0.6 * dpr;
-                this.baseVy = (Math.random() - 0.5) * 0.6 * dpr;
-                this.vx = this.baseVx;
-                this.vy = this.baseVy;
-                this.radius = (Math.random() * 1.5 + 0.5) * dpr;
-                this.alpha = Math.random() * 0.5 + 0.15;
-            }
-
-            update(w: number, h: number, mouse: { x: number, y: number, radius: number }, dpr: number) {
-                if (this.x < 0 || this.x > w) {
-                    this.baseVx *= -1;
-                    this.vx *= -1;
-                    this.x = Math.max(0, Math.min(this.x, w));
-                }
-                if (this.y < 0 || this.y > h) {
-                    this.baseVy *= -1;
-                    this.vy *= -1;
-                    this.y = Math.max(0, Math.min(this.y, h));
-                }
-
-                let dx = mouse.x - this.x;
-                let dy = mouse.y - this.y;
-                let dist = Math.sqrt(dx * dx + dy * dy);
-
-                if (dist < mouse.radius) {
-                    let forceDirectionX = dx / dist;
-                    let forceDirectionY = dy / dist;
-                    let force = (mouse.radius - dist) / mouse.radius;
-
-                    let pushX = -forceDirectionX * force * 3 * dpr;
-                    let pushY = -forceDirectionY * force * 3 * dpr;
-
-                    this.vx += pushX;
-                    this.vy += pushY;
-                }
-
-                this.vx += (this.baseVx - this.vx) * 0.04;
-                this.vy += (this.baseVy - this.vy) * 0.04;
-
-                let currentSpeed = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
-                let maxSpeed = 4 * dpr;
-                if (currentSpeed > maxSpeed) {
-                    this.vx = (this.vx / currentSpeed) * maxSpeed;
-                    this.vy = (this.vy / currentSpeed) * maxSpeed;
-                }
-
-                this.x += this.vx;
-                this.y += this.vy;
-            }
-
-            draw(ctx: CanvasRenderingContext2D, isDark: boolean) {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = isDark
-                    ? `rgba(255, 255, 255, ${this.alpha})`
-                    : `rgba(0, 0, 0, ${this.alpha})`;
-                ctx.fill();
-            }
-        }
 
         const resizeCanvas = () => {
             cachedRect = canvas.getBoundingClientRect();

@@ -8,8 +8,6 @@ export function Preloader() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        setIsLoading(true);
-
         const timer = setTimeout(() => {
             setIsLoading(false);
             document.body.style.overflow = "";

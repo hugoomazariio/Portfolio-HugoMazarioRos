@@ -45,7 +45,7 @@ export function HangingProfile() {
 
         const dy = Math.max(state.current.dragY, 10);
 
-        let targetAngle = Math.atan2(dx, dy);
+        const targetAngle = Math.atan2(dx, dy);
         let targetLength = Math.sqrt(dx * dx + dy * dy);
 
         if (targetLength > ropeLength) {
@@ -131,7 +131,7 @@ export function HangingProfile() {
       window.removeEventListener("pointerup", handlePointerUp);
     };
 
-    updateMousePos(e.nativeEvent as any);
+    updateMousePos(e.nativeEvent as PointerEvent);
 
     window.addEventListener("pointermove", updateMousePos);
     window.addEventListener("pointerup", handlePointerUp);

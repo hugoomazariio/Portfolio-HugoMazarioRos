@@ -23,8 +23,10 @@ export default function Projects() {
 
     useEffect(() => {
         if (!isDesktop) {
-            setMeasurements({ scrollRange: 0, dynamicHeight: "auto" });
-            return;
+            const frame = requestAnimationFrame(() => {
+                setMeasurements({ scrollRange: 0, dynamicHeight: "auto" });
+            });
+            return () => cancelAnimationFrame(frame);
         }
 
         const updateMeasurements = () => {
@@ -186,7 +188,7 @@ export default function Projects() {
     );
 }
 
-const ProjectCard = React.memo(({ project, onClick }: { project: ProjectItem; onClick?: () => void }) => {
+const ProjectCard = React.memo(function ProjectCard({ project, onClick }: { project: ProjectItem; onClick?: () => void }) {
     return (
         <BlurReveal>
             <div
