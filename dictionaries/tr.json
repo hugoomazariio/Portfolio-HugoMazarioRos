@@ -35,5 +35,10 @@
     "aboutProject": "Proje Hakkında",
     "technologies": "Teknolojiler",
     "liveDemo": "Canlı Demo",
-    "sourceCode": "Kaynak Kodları"
+    "sourceCode": "Kaynak Kodları",
+    "notFound": {
+        "title": "SAYFA BULUNAMADI",
+        "description": "Aradığınız sayfa kaldırılmış, adı değiştirilmiş veya geçici olarak kullanım dışı kalmış olabilir.",
+        "goHome": "Ana Sayfaya Dön"
+    }
 }

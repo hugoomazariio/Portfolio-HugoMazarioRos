@@ -35,5 +35,10 @@
     "aboutProject": "About the Project",
     "technologies": "Technologies",
     "liveDemo": "Live Demo",
-    "sourceCode": "Source Code"
+    "sourceCode": "Source Code",
+    "notFound": {
+        "title": "PAGE NOT FOUND",
+        "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+        "goHome": "Back to Home"
+    }
 }
