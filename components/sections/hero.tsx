@@ -122,7 +122,7 @@ export default function Hero() {
                 <div className="flex justify-between items-start w-full">
 
                     <div className="text-4xl sm:text-6xl text-foreground/10 grunge-text rotate-90 pointer-events-none select-none">
-                    ////
+                        {"////"}
                     </div>
 
                     <div className="flex flex-col items-center gap-4">
