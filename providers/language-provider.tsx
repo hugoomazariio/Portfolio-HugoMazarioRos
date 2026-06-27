@@ -4,11 +4,14 @@ import { createContext, useContext, useMemo } from "react";
 import type { Locale } from "@/lib/i18n";
 import { parseMarkdown } from "@/lib/markdown";
 import { deepMerge } from "@/lib/utils";
+import type { DictionaryType, ContentLanguageType, SharedDataType } from "@/lib/loaders";
+
+export type ContentType = SharedDataType & ContentLanguageType;
 
 interface LanguageContextType {
     language: Locale;
-    dict: any;
-    content: any;
+    dict: DictionaryType;
+    content: ContentType;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -16,9 +19,9 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 interface LanguageProviderProps {
     children: React.ReactNode;
     lang: Locale;
-    dictionary: Record<string, any>;
-    contents: Record<string, any>;
-    shared: Record<string, any>;
+    dictionary: DictionaryType;
+    contents: ContentLanguageType;
+    shared: SharedDataType;
 }
 
 export function LanguageProvider({ children, lang, dictionary, contents, shared }: LanguageProviderProps) {
@@ -28,7 +31,7 @@ export function LanguageProvider({ children, lang, dictionary, contents, shared 
     );
 
     const content = useMemo(
-        () => parseMarkdown(deepMerge(shared, contents)),
+        () => parseMarkdown(deepMerge(shared as unknown as Record<string, unknown>, contents as unknown as Record<string, unknown>)) as unknown as ContentType,
         [contents, shared],
     );
 

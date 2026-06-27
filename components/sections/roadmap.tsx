@@ -70,11 +70,10 @@ export default function Roadmap() {
                     />
 
                     <div className="flex flex-col w-full gap-8 md:gap-24 relative z-20">
-                        {roadmapItems.map((item: any, index: number) => (
+                        {roadmapItems.map((item: RoadmapItem, index: number) => (
                             <TimelineNode
                                 key={item.id}
                                 item={item}
-                                index={index}
                                 isEven={index % 2 === 0}
                             />
                         ))}
@@ -85,7 +84,7 @@ export default function Roadmap() {
     );
 }
 
-const TimelineNode = ({ item, index, isEven }: { item: RoadmapItem, index: number, isEven: boolean }) => {
+const TimelineNode = ({ item, isEven }: { item: RoadmapItem, isEven: boolean }) => {
     return (
         <div className={cn("relative flex items-center justify-between w-full", isEven ? "flex-row" : "flex-row-reverse")}>
 

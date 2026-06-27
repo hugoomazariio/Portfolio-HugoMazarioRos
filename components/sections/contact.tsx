@@ -84,7 +84,7 @@ export default function Contact() {
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-4">
-                        {content.social.map((link: any) => (
+                        {content.social.map((link: { label: string; href: string }) => (
                             <BlurReveal key={link.label}>
                                 <ShineButton
                                     href={link.href}

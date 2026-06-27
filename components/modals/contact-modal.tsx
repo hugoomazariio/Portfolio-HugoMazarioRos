@@ -68,7 +68,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                     </div>
 
                     <div className="flex flex-wrap gap-3 items-center mt-6">
-                        {content.social.map((link: any) => (
+                        {content.social.map((link: { label: string; href: string }) => (
                             <div key={link.label}>
                                 <ShineButton
                                     href={link.href}
