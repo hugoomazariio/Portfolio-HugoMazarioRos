@@ -1,56 +1,58 @@
 {
     "contact": {
-        "location": "Konya, Türkiye",
-        "email": "mustafw42@gmail.com",
-        "phone": "Not added yet."
+        "location": "Madrid, España",
+        "email": "hugo.maro05@gmail.com",
+        "phone": "627603108"
     },
     "social": [
         {
             "label": "GitHub",
-            "href": "https://github.com/xkintaro"
+            "href": "https://github.com/hugoomazariio"
         },
         {
-            "label": "Discord",
-            "href": "https://discord.gg/NSQk27Zdkv"
+            "label": "Itch.io",
+            "href": "https://hugoomazariio.itch.io"
         },
         {
-            "label": "Instagram",
-            "href": "https://instagram.com/xkintaro"
-        },
-        {
-            "label": "Linkedin",
-            "href": "https://www.linkedin.com/in/mustafa-tasal/"
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/hugo-mazarío-ros/"
         }
     ],
     "stack": {
+        "backend": [
+            {
+                "name": "Java",
+                "icon": "/stack/java.svg",
+                "featured": true
+            },
+            {
+                "name": "C#",
+                "icon": "/stack/csharp.svg",
+                "featured": true
+            },
+            {
+                "name": "MySQL",
+                "icon": "/stack/mysql.svg",
+                "featured": true
+            },
+            {
+                "name": "Python",
+                "icon": "/stack/python.svg"
+            }
+        ],
+        "gamedev": [
+            {
+                "name": "Unity",
+                "icon": "/stack/unity.svg",
+                "featured": true
+            },
+            {
+                "name": "Adventure Game Studio",
+                "icon": "/stack/ags.png",
+                "featured": true
+            }
+        ],
         "frontend": [
-            {
-                "name": "React",
-                "icon": "/stack/react.svg",
-                "featured": true
-            },
-            {
-                "name": "Next.js",
-                "icon": "/stack/nextjs.svg",
-                "featured": true
-            },
-            {
-                "name": "Tailwind CSS",
-                "icon": "/stack/tailwindcss.svg",
-                "featured": true
-            },
-            {
-                "name": "Bootstrap",
-                "icon": "/stack/bootstrap.svg"
-            },
-            {
-                "name": "Framer Motion",
-                "icon": "/stack/framermotion.svg"
-            },
-            {
-                "name": "TypeScript",
-                "icon": "/stack/typescript.svg"
-            },
             {
                 "name": "JavaScript",
                 "icon": "/stack/javascript.svg"
@@ -64,63 +66,28 @@
                 "icon": "/stack/css3.svg"
             }
         ],
-        "backend": [
+        "art": [
             {
-                "name": "Node.js",
-                "icon": "/stack/nodejs.svg"
-            },
-            {
-                "name": "PHP",
-                "icon": "/stack/php.svg"
-            },
-            {
-                "name": "Laravel",
-                "icon": "/stack/laravel.svg",
+                "name": "3ds Max",
+                "icon": "/stack/3dsmax.svg",
                 "featured": true
             },
             {
-                "name": "ASP.NET",
-                "icon": "/stack/aspnet.svg"
-            },
-            {
-                "name": "Rust",
-                "icon": "/stack/rust.svg"
-            },
-            {
-                "name": "C#",
-                "icon": "/stack/csharp.svg"
-            },
-            {
-                "name": "Python",
-                "icon": "/stack/python.svg"
-            },
-            {
-                "name": "Discord.js",
-                "icon": "/stack/discordjs.svg"
-            }
-        ],
-        "database": [
-            {
-                "name": "PostgreSQL",
-                "icon": "/stack/postgresql.svg",
+                "name": "Substance Painter",
+                "icon": "/stack/substance.svg",
                 "featured": true
             },
             {
-                "name": "MySQL",
-                "icon": "/stack/mysql.svg",
-                "featured": true
+                "name": "Photoshop",
+                "icon": "/stack/photoshop.svg"
             },
             {
-                "name": "MongoDB",
-                "icon": "/stack/mongodb.svg"
+                "name": "Procreate",
+                "icon": "/stack/procreate.svg"
             },
             {
-                "name": "Prisma",
-                "icon": "/stack/prisma.svg"
-            },
-            {
-                "name": "Neon",
-                "icon": "/stack/neon.png"
+                "name": "Adobe Premiere",
+                "icon": "/stack/premiere.svg"
             }
         ],
         "tools": [
@@ -129,14 +96,13 @@
                 "icon": "/stack/git.svg"
             },
             {
-                "name": "Vercel",
-                "icon": "/stack/vercel.svg"
+                "name": "GitHub",
+                "icon": "/stack/github.svg"
             },
             {
-                "name": "Tauri",
-                "icon": "/stack/tauri.svg"
+                "name": "GitLab",
+                "icon": "/stack/gitlab.svg"
             }
         ]
     }
 }
-
