@@ -17,6 +17,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   title: "HugoMazaríoPortfolio",
   description: "Creative Developer Portfolio",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export function generateStaticParams() {

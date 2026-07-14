@@ -84,7 +84,7 @@ export function Preloader() {
                             <div className="absolute inset-3 rounded-full border border-border/50 bg-secondary/5 backdrop-blur-md" />
 
                             <Image
-                                src="/logo.png"
+                                src="/logoHM.png"
                                 alt="Logo"
                                 width={56}
                                 height={56}
