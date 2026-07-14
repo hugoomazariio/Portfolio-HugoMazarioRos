@@ -42,5 +42,6 @@
         "title": "Página no encontrada",
         "description": "Es posible que la página que estás buscando haya sido eliminada, haya cambiado de nombre o no esté disponible temporalmente.",
         "goHome": "Volver al Inicio"
-    }
+    },
+    "cvUrl": "/CV_Hugo_Mazario_ES.pdf"
 }

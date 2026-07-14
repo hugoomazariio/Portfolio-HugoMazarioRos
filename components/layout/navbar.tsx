@@ -153,7 +153,7 @@ export default function Navbar() {
           className="relative z-110 flex items-center gap-2 group"
         >
           <span className="text-xl sm:text-2xl font-black tracking-tighter uppercase text-foreground transition-all duration-300 group-hover:opacity-70">
-            kintaro
+            Hugo Mazarío Ros
           </span>
         </Link>
 

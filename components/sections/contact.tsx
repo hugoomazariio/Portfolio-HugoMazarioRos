@@ -84,6 +84,7 @@ export default function Contact() {
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-4">
+                        {/* Redes Sociales dinámicas */}
                         {content.social.map((link: { label: string; href: string }) => (
                             <BlurReveal key={link.label}>
                                 <ShineButton
@@ -98,6 +99,32 @@ export default function Contact() {
                                 </ShineButton>
                             </BlurReveal>
                         ))}
+
+                        {/* Botón dinámico de CV (Solo se muestra si cvUrl está definido en el diccionario) */}
+                        {dict.cvUrl && (
+                            <BlurReveal>
+                                <ShineButton
+                                    href={dict.cvUrl}
+                                    download={dict.cvUrl.split('/').pop()}
+                                    className="h-14 px-8"
+                                    shineClassName="w-6 bg-background/20 dark:bg-background/20"
+                                >
+                                    <span className="relative z-10 flex items-center gap-3 text-sm font-medium tracking-widest uppercase cursor-pointer">
+                                        CV
+                                        <svg
+                                            className="h-4 w-4 transition-transform duration-500 group-hover:translate-y-0.5"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            strokeWidth={2.5}
+                                            stroke="currentColor"
+                                        >
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                        </svg>
+                                    </span>
+                                </ShineButton>
+                            </BlurReveal>
+                        )}
                     </div>
                 </div>
             </div>

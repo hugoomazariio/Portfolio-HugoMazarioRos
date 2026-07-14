@@ -42,5 +42,6 @@
         "title": "Page Not Found",
         "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
         "goHome": "Back to Home"
-    }
+    },
+    "cvUrl": "/CV_Hugo_Mazario_EN.pdf"
 }
