@@ -1,0 +1,46 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "stack": "Tecnologías",
+        "projects": "Proyectos",
+        "roadmap": "Trayectoria",
+        "contact": "Contacto"
+    },
+    "title": {
+        "about": "Sobre mí",
+        "stack": "Tecnologías",
+        "projects": "Proyectos",
+        "roadmap": "Trayectoria",
+        "contact": "Contacto"
+    },
+    "scrollDown": "Hacia abajo",
+    "contactMe": "Contactar",
+    "exploreProjects": "Explorar Proyectos",
+    "readFullVersion": "Leer más",
+    "frontendStack": "Desarrollo Frontend",
+    "backendStack": "Lógica & Backend",
+    "gamedevStack": "Desarrollo de Videojuegos",
+    "artStack": "Arte 3D & Edición",
+    "databaseStack": "Bases de Datos",
+    "toolsStack": "Herramientas & Git",
+    "projectsIntro": "Una colección de *videojuegos*, *proyectos web* y *experiencias interactivas* construidas con pasión.",
+    "projectsScrollText": "Desliza para explorar",
+    "projectsEndText": "Fin",
+    "roadmapDescription": "Un recorrido por mi formación académica, proyectos e hitos profesionales en el mundo del software y los videojuegos.",
+    "contactIntroText": "Tanto si quieres colaborar en un nuevo desarrollo interactivo como si buscas integrar sistemas de backend robustos.",
+    "sendEmail": "Enviar Correo",
+    "directLine": "Línea Directa",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "contactModalDescription": "Escríbeme un mensaje y me pondré en contacto contigo lo antes posible.",
+    "projectDetails": "Detalles sobre",
+    "aboutProject": "Sobre el Proyecto",
+    "technologies": "Tecnologías",
+    "liveDemo": "Demo en Vivo",
+    "sourceCode": "Código Fuente",
+    "notFound": {
+        "title": "Página no encontrada",
+        "description": "Es posible que la página que estás buscando haya sido eliminada, haya cambiado de nombre o no esté disponible temporalmente.",
+        "goHome": "Volver al Inicio"
+    }
+}

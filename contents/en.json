@@ -1,113 +1,93 @@
 {
     "about": {
-        "intro": "I'm a *Full Stack Developer* focused on building **clean and sustainable systems**.",
-        "description": "I'm someone who loves **learning new things** and constantly tries to put what I learn into practice. I develop *web* and *desktop* applications. I enjoy working with simple, **practical**, and **sustainable** tools.",
-        "full": "Hi, I'm **Kintaro**; my real name is **Mustafa**. I have been actively involved in software development for the past few years, mostly self-taught through my own projects and experiments.\n\nI mainly work on web development, using technologies like *React*, *Next.js*, *Laravel*, *TailwindCSS*, *PostgreSQL*, and *MySQL*. Along with these, I develop desktop applications with *WinForms*, *C#*, and *Rust*, as well as various projects utilizing tools like *FFmpeg* and *yt-dlp*.\n\nWhenever I see a new technology or tool, I usually start experimenting with it; I love learning, which constantly draws me to different areas.\n\nI pay great attention to making my projects as **clean, understandable, and sustainable** as possible. I'm a bit **obsessive** about this; sometimes I make things harder for myself even when I know it's unnecessary.\n\nMy current goal is to specialize in **backend and system design** and make my projects more professional. In addition to this, I want to build my own systems, libraries, and simple, practical tools."
+        "intro": "I'm a *Backend & Game Developer*, graduated with **Honors in DAM** and passionate about **interactive experiences**.",
+        "description": "Multiplatform developer specialized in video game environments (Unity). No. 1 of my class in DAM (GPA: 9.36) and current Game Design and Development student at URJC. I combine a solid systems and backend logical foundation with technical creation in game engines.",
+        "full": "Hi, I'm **Hugo Mazarío Ros**. My passion for computer science led me to graduate as a Higher Technical Degree in Multiplatform Application Development (DAM) at The Core School, achieving the **No. 1 spot of my graduating class and obtaining full academic Honors**.\n\nI have practical experience in game development, having worked professionally as an **Apprentice Unity Developer** at 'Proyecto Moción - Comunidad de Jesús', where I took charge of version control under GitLab and designed the game's most complex logical systems and puzzles.\n\nCurrently, I continue to expand my horizons by studying Game Design and Development at URJC. I master the *C#* language and the *Unity* engine, applying development best practices to build smooth mechanics and optimally integrate 3D assets designed in tools like *3ds Max*. I am a proactive, detail-oriented person in constant technical evolution."
     },
     "manifesto": [
-        "RADICAL TRANSPARENCY",
-        "INTENTIONAL MINIMALISM",
-        "ARCHITECTURAL INTEGRITY",
-        "FIRST PRINCIPLES THINKING",
-        "PERFORMANCE WITHOUT COMPROMISE",
-        "SCALABLE VISION"
+        "LOGICAL QUALITY & ARCHITECTURE",
+        "OPTIMIZED GAMEPLAY",
+        "COMPLEX PROBLEM SOLVING",
+        "STRICT VERSION CONTROL",
+        "COMPLETE TECHNICAL DESIGN",
+        "PROACTIVITY & CONSTANT LEARNING"
     ],
     "projects": [
         {
             "id": "1",
-            "title": "Aether Media",
-            "category": "Media Tool",
-            "year": "2026",
-            "description": "Aether Media is a media processing tool that allows users to batch convert, compress, resize, and rename media files (video, audio, image) quickly, securely, and easily.\n\nBuilt on the performance of Rust and the lightweight nature of Tauri. Using the power of FFmpeg in the background, it offers complex media operations with a modern interface. Your files are never uploaded to a server; all processes take place entirely locally on your own device.",
-            "image": "/projects/20260427093247885.jpg",
-            "repo": "https://github.com/xkintaro/aether-media",
+            "title": "My Neighbor Totoro (AGS)",
+            "category": "Video Game / Graphic Adventure",
+            "year": "2025",
+            "description": "A faithful recreation of a classic graphic adventure inspired by the Studio Ghibli universe. Built entirely using Adventure Game Studio (AGS), where I programmed interaction logic, character movement scripts, and managed dynamic dialogues and cutscenes.",
+            "image": "/projects/totoro.jpg",
+            "demo": "https://hugoomazariio.itch.io",
             "stack": [
-                "FFmpeg",
-                "Rust",
-                "Tauri",
-                "React",
-                "TailwindCSS"
+                "AGS",
+                "Game Design",
+                "Pixel Art"
             ]
         },
         {
             "id": "2",
-            "title": "Aether JS",
-            "category": "Library",
+            "title": "Interactive Multimedia Space",
+            "category": "Web Development / Frontend",
             "year": "2026",
-            "description": "Aether JS is a headless, utility-first JavaScript interaction controller designed for modern web development. It enables you to build fully accessible (a11y) UIs—like modals, tabs, and accordions—using only HTML data-aether-* attributes, without writing complex JavaScript. Perfectly suited for TailwindCSS and similar frameworks, it focuses on state management while leaving the styling entirely to you. Features include focus trapping, dynamic DOM observation, URL syncing, and theme management.",
-            "image": "/projects/20260427093247620.jpg",
-            "demo": "https://xkintaro.github.io/aether-js-documentation/en.html",
-            "repo": "https://github.com/xkintaro/aether-js",
+            "description": "An interactive web project focused on high-fidelity frontend design and development. Built with pure web technologies, implementing responsive layouts, browser-optimized animations, and clean code to ensure a fluid and reactive user experience across devices.",
+            "image": "/projects/multimedia_web.jpg",
+            "repo": "https://github.com/hugoomazariio/TrabajoMultimedia",
             "stack": [
-                "JavaScript"
+                "JavaScript",
+                "HTML5",
+                "CSS3"
             ]
         },
         {
             "id": "3",
-            "title": "File Manager",
-            "category": "Web Application",
+            "title": "Eiden's Rebirth",
+            "category": "2D Video Game / TFG Project",
             "year": "2025",
-            "description": "File Manager is a self-hosted file management application with a cyberpunk-inspired interface. It lets you upload, organize, tag, and filter any type of file through a sleek, modern web interface backed by SQLite — no external database required.\n\nAll files are stored locally on your machine — no cloud, no third-party servers. Upload your files, assign tags and keywords, and find them instantly with powerful filtering. The application automatically generates thumbnails for images and videos, giving you a visual overview of your entire archive.",
-            "image": "/projects/20260305210513749.jpg",
-            "repo": "https://github.com/xkintaro/file-manager",
+            "description": "Playable 2D game demo developed in Unity and published on Itch.io. An active, continuously expanding project that served as my Final Degree Project (TFG) for my DAM degree, integrating complex gameplay mechanics, physics, and visual polish.",
+            "image": "/projects/eidens_rebirth.jpg",
+            "demo": "https://hugoomazariio.itch.io",
             "stack": [
-                "React",
-                "TailwindCSS",
-                "Node.js",
-                "SQLite"
+                "Unity",
+                "C#",
+                "Cinemachine",
+                "Tilemaps"
             ]
         }
     ],
     "roadmap": [
         {
             "id": "01",
-            "year": "2022",
-            "description": "I first got introduced to software development in high school. I learned the fundamentals and logic of programming using C# in an object-oriented programming class.",
+            "year": "2023 - 2025",
+            "description": "Higher Technical Degree in DAM (No. 1 of Class, 9.36 GPA, full academic Honors). Specialization in programming logic, database systems, and multiplatform development. Published 'Eiden's Rebirth' as my final thesis project.",
             "stack": [
+                "Java",
+                "MySQL",
+                "Unity",
                 "C#"
             ]
         },
         {
             "id": "02",
-            "year": "2023",
-            "description": "I started developing static and dynamic websites by learning HTML, CSS, and ASP.NET. During this period, I also learned how to use databases in my projects.",
+            "year": "2025 (Internship)",
+            "description": "Apprentice Unity Developer at Proyecto Moción. Developed advanced puzzle mechanics, took technical charge of Git/GitLab workflows, and coordinated within an interactive software development team.",
             "stack": [
-                "HTML",
-                "CSS",
-                "ASP.NET",
-                "MySQL"
+                "Unity",
+                "C#",
+                "GitLab"
             ]
         },
         {
             "id": "03",
-            "year": "2024",
-            "description": "It was my last year of high school. I significantly improved my UI development skills with CSS and continued working with ASP.NET at my internship.",
+            "year": "2025 - Present",
+            "description": "Bachelor's Degree in Game Design and Development (URJC). Deepening my skills in high-performance gameplay mechanics, art pipelines, low-poly modeling, and building interactive projects.",
             "stack": [
-                "HTML",
-                "CSS",
-                "ASP.NET",
-                "MySQL"
-            ]
-        },
-        {
-            "id": "04",
-            "year": "2025",
-            "description": "After high school, I turned to modern technologies like React, Node.js, Tailwind CSS, and MongoDB. During this period, I developed many websites and applications. Additionally, I started writing various tools in Python for my personal use.",
-            "stack": [
-                "React",
-                "Node.js",
-                "TailwindCSS",
-                "MongoDB"
-            ]
-        },
-        {
-            "id": "05",
-            "year": "2026",
-            "description": "I started working as an intern at PostAjans, where I focused mainly on Laravel. In addition, I develop web projects using Next.js in my free time and build various personal projects utilizing technologies like Tauri and FFmpeg.",
-            "stack": [
-                "Laravel",
-                "Next.js",
-                "PostgreSQL"
+                "Unity",
+                "3ds Max",
+                "Photoshop",
+                "JavaScript"
             ]
         }
     ]

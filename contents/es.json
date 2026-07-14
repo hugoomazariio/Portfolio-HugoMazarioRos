@@ -1,113 +1,93 @@
 {
     "about": {
-        "intro": "**Temiz ve sürdürülebilir sistemler** kurmaya odaklanan bir *Full Stack Geliştiriciyim*.",
-        "description": "Sürekli **yeni şeyler öğrenmeyi** seven, öğrendiklerini pratiğe dökmeye çalışan biriyim. *Web* ve *masaüstü* uygulamaları geliştiriyorum. Basit, **pratik** ve **sürdürülebilir** araçlarla uğraşmayı seviyorum.",
-        "full": "Selam, ben **Kintaro**; gerçek adım **Mustafa**. Son birkaç yıldır aktif olarak yazılımla uğraşıyorum ve bu süreçte kendimi büyük ölçüde kendi projelerim ve denemelerim üzerinden geliştirdim.\n\nAğırlıklı olarak web geliştirme tarafında çalışıyorum; *React*, *Next.js*, *Laravel*, *TailwindCSS*, *PostgreSQL* ve *MySQL* gibi teknolojileri kullanıyorum. Bunların yanında *WinForms*, *C#* ve *Rust* ile masaüstü uygulamaları, *FFmpeg* ve *yt-dlp* gibi araçlarla da çeşitli projeler geliştiriyorum.\n\nYeni bir teknoloji ya da araç gördüğümde genellikle denemeye başlıyorum; öğrenmeyi seven biriyim ve bu da beni sürekli farklı alanlara çekiyor.\n\nProjelerimin olabildiğince **temiz, anlaşılır ve sürdürülebilir** olmasına önem veriyorum. Bu konuda biraz **takıntılıyım**; bazen gereksiz olduğunu bilsem bile kendi işimi zorlaştırabiliyorum.\n\nŞu anki hedefim, özellikle **backend ve sistem tasarımı** alanında gelişmek ve projelerimi daha profesyonel hale getirmek. Bunun yanında kendi sistemlerimi, kütüphanelerimi ve basit, pratik araçlar üretmek istiyorum."
+        "intro": "Soy *Backend & Game Developer*, graduado con **Matrícula de Honor en DAM** y apasionado por las **experiencias interactivas**.",
+        "description": "Desarrollador multiplataforma especializado en entornos de videojuegos (Unity). Nº 1 de mi promoción en DAM (media de 9,36) y actual estudiante de Diseño y Desarrollo de Videojuegos en la URJC. Combino una sólida base lógica en sistemas y backend con la creación técnica en motores de juego.",
+        "full": "Hola, soy **Hugo Mazarío Ros**. Mi pasión por la informática me llevó a graduarme como Técnico Superior en DAM en The Core School con la calificación de **Nº 1 de promoción y Matrícula de Honor**.\n\nTengo experiencia práctica en el desarrollo de videojuegos, habiendo trabajado profesionalmente como **Desarrollador Unity en Prácticas** en el 'Proyecto Moción - Comunidad de Jesús', donde me encargué del control de versiones bajo GitLab y diseñé los sistemas lógicos y puzles más complejos del juego.\n\nActualmente, continúo expandiendo mis fronteras estudiando el Grado de Diseño y Desarrollo de Videojuegos en la URJC. Domino el lenguaje *C#* y el motor *Unity*, aplicando buenas prácticas de desarrollo para construir mecánicas fluidas e integrar de manera óptima assets en 3D desarrollados con herramientas como *3ds Max*. Soy una persona proactiva, orientada al detalle y en constante evolución técnica."
     },
     "manifesto": [
-        "RADICAL TRANSPARENCY",
-        "INTENTIONAL MINIMALISM",
-        "ARCHITECTURAL INTEGRITY",
-        "FIRST PRINCIPLES THINKING",
-        "PERFORMANCE WITHOUT COMPROMISE",
-        "SCALABLE VISION"
+        "CALIDAD LÓGICA Y ARQUITECTURA",
+        "JUGABILIDAD OPTIMIZADA",
+        "RESOLUCIÓN DE PROBLEMAS COMPLEJOS",
+        "CONTROL DE VERSIONES ESTRICTO",
+        "DISEÑO TÉCNICO COMPLETO",
+        "APRENDIZAJE Y PROACTIVIDAD"
     ],
     "projects": [
         {
             "id": "1",
-            "title": "Aether Media",
-            "category": "Medya Aracı",
-            "year": "2026",
-            "description": "Aether Media, kullanıcıların medya dosyalarını (video, ses, görsel) toplu olarak hızlı, güvenli ve kolay bir şekilde dönüştürmelerini, sıkıştırmalarını, boyutlandırmalarını ve yeniden isimlendirmelerini sağlayan bir medya işleme aracıdır.\n\nRust dilinin performansı ve Tauri'nin hafif yapısı üzerine inşa edilmiştir. Arka planda FFmpeg'in gücünü kullanarak, karmaşık medya işlemlerini modern bir arayüzle sunar. Dosyalarınız asla bir sunucuya yüklenmez; tüm işlemler tamamen yerel olarak kendi cihazınızda gerçekleşir.",
-            "image": "/projects/20260427093247885.jpg",
-            "repo": "https://github.com/xkintaro/aether-media",
+            "title": "My Neighbor Totoro (AGS)",
+            "category": "Videojuego / Aventura Gráfica",
+            "year": "2025",
+            "description": "Una fiel recreación en forma de aventura gráfica clásica inspirada en el universo de Studio Ghibli. Desarrollada de forma integral utilizando Adventure Game Studio (AGS), donde programé la lógica de las interacciones, los scripts de movimiento de los personajes y la gestión de diálogos y escenas dinámicas.",
+            "image": "/projects/totoro.jpg",
+            "demo": "https://hugoomazariio.itch.io",
             "stack": [
-                "FFmpeg",
-                "Rust",
-                "Tauri",
-                "React",
-                "TailwindCSS"
+                "AGS",
+                "Game Design",
+                "Pixel Art"
             ]
         },
         {
             "id": "2",
-            "title": "Aether JS",
-            "category": "Kütüphane",
+            "title": "Interactive Multimedia Space",
+            "category": "Desarrollo Web / Frontend",
             "year": "2026",
-            "description": "Aether JS, modern web geliştirme için tasarlanmış, headless ve utility-first bir JavaScript etkileşim yöneticisidir. Karmaşık JavaScript kodları yazmak yerine, yalnızca HTML data-aether-* niteliklerini kullanarak tamamen erişilebilir (a11y) modallar, sekmeler ve akordeonlar oluşturmanızı sağlar. TailwindCSS ve benzeri framework'lerle kusursuz uyum sağlayan kütüphane, stili tamamen size bırakarak durum yönetimine odaklanır. Odak hapsetme, dinamik DOM gözlemi, URL senkronizasyonu ve tema yönetimi sunar.",
-            "image": "/projects/20260427093247620.jpg",
-            "demo": "https://xkintaro.github.io/aether-js-documentation/en.html",
-            "repo": "https://github.com/xkintaro/aether-js",
+            "description": "Proyecto web interactivo enfocado en diseño y desarrollo frontend de alta fidelidad. Desarrollado con tecnologías web puras, aplicando maquetación responsiva, animaciones optimizadas para el navegador y una estructura limpia para asegurar una experiencia de usuario fluida y reactiva en cualquier dispositivo.",
+            "image": "/projects/multimedia_web.jpg",
+            "repo": "https://github.com/hugoomazariio/TrabajoMultimedia",
             "stack": [
-                "JavaScript"
+                "JavaScript",
+                "HTML5",
+                "CSS3"
             ]
         },
         {
             "id": "3",
-            "title": "File Manager",
-            "category": "Web Uygulaması",
+            "title": "Eiden's Rebirth",
+            "category": "Videojuego 2D / Proyecto TFG",
             "year": "2025",
-            "description": "File Manager, cyberpunk esintili bir arayüze sahip, self-hosted bir dosya yönetimi uygulamasıdır. SQLite destekli şık ve modern bir web arayüzü üzerinden her türlü dosyayı yüklemenize, düzenlemenize, etiketlemenize ve filtrelemenize olanak tanır — harici bir veritabanı gerektirmez.\n\nTüm dosyalar yerel olarak makinenizde saklanır — bulut yok, üçüncü taraf sunucular yok. Dosyalarınızı yükleyin, etiketler ve anahtar kelimeler atayın ve güçlü filtreleme ile anında bulun. Uygulama, resimler ve videolar için otomatik olarak thumbnails oluşturarak tüm arşivinize görsel bir genel bakış sunar.",
-            "image": "/projects/20260305210513749.jpg",
-            "repo": "https://github.com/xkintaro/file-manager",
+            "description": "Demo jugable de un videojuego en 2D desarrollado en Unity y publicada en Itch.io. Proyecto de desarrollo ampliado que sirvió como mi Trabajo de Fin de Grado (TFG) en DAM, integrando lógicas complejas de gameplay, físicas y pulido visual.",
+            "image": "/projects/eidens_rebirth.jpg",
+            "demo": "https://hugoomazariio.itch.io",
             "stack": [
-                "React",
-                "TailwindCSS",
-                "Node.js",
-                "SQLite"
+                "Unity",
+                "C#",
+                "Cinemachine",
+                "Tilemaps"
             ]
         }
     ],
     "roadmap": [
         {
             "id": "01",
-            "year": "2022",
-            "description": "Yazılımla ilk kez lisede tanıştım. Nesne tabanlı programlama dersinde C# kullanarak programlamanın temellerini ve mantığını öğrendim.",
+            "year": "2023 - 2025",
+            "description": "Técnico Superior en DAM (Nº 1 de Promoción, Media 9,36, Matrícula de Honor). Especialización en lógica de programación, bases de datos y desarrollo multiplataforma. Publicación de 'Eiden's Rebirth' como TFG.",
             "stack": [
+                "Java",
+                "MySQL",
+                "Unity",
                 "C#"
             ]
         },
         {
             "id": "02",
-            "year": "2023",
-            "description": "HTML, CSS ve ASP.NET öğrenerek statik ve dinamik web siteleri geliştirmeye başladım. Bu dönemde projelerimde veritabanı kullanmayı da öğrendim.",
+            "year": "2025 (Prácticas)",
+            "description": "Desarrollador Unity en Prácticas en Proyecto Moción. Desarrollo de mecánicas de puzles avanzados, gestión técnica de Git/GitLab y coordinación en equipo de desarrollo de software interactivo.",
             "stack": [
-                "HTML",
-                "CSS",
-                "ASP.NET",
-                "MySQL"
+                "Unity",
+                "C#",
+                "GitLab"
             ]
         },
         {
             "id": "03",
-            "year": "2024",
-            "description": "Lisedeki son yılımdı. CSS ile arayüz geliştirme konusunda kendimi iyice ilerlettim ve staj yaptığım yerde ASP.NET ile çalışmaya devam ettim.",
+            "year": "2025 - Presente",
+            "description": "Estudios de Grado Universitario en Diseño y Desarrollo de Videojuegos (Universidad Rey Juan Carlos). Profundización en mecánicas de jugabilidad de alto rendimiento, arte y modelado low-poly, y creación de proyectos interactivos.",
             "stack": [
-                "HTML",
-                "CSS",
-                "ASP.NET",
-                "MySQL"
-            ]
-        },
-        {
-            "id": "04",
-            "year": "2025",
-            "description": "Lise sonrasında React, Node.js, Tailwind CSS ve MongoDB gibi modern teknolojilere yöneldim. Bu süreçte birçok web sitesi ve uygulama geliştirdim. Ek olarak Python ile kendi kullanımıma yönelik çeşitli araçlar yazmaya başladım.",
-            "stack": [
-                "React",
-                "Node.js",
-                "TailwindCSS",
-                "MongoDB"
-            ]
-        },
-        {
-            "id": "05",
-            "year": "2026",
-            "description": "PostAjans'ta stajyer olarak çalışmaya başladım ve burada ağırlıklı olarak Laravel üzerine yoğunlaştım. Bunun yanında boş zamanlarımda Next.js ile web projeleri geliştiriyor; Tauri, FFmpeg gibi teknolojileri de kullanarak çeşitli kişisel projeler üretiyorum.",
-            "stack": [
-                "Laravel",
-                "Next.js",
-                "PostgreSQL"
+                "Unity",
+                "3ds Max",
+                "Photoshop",
+                "JavaScript"
             ]
         }
     ]

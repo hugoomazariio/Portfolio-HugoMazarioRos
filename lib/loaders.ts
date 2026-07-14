@@ -12,7 +12,7 @@ type Loader<T> = () => Promise<T>;
 
 const dictionaries: Record<Locale, Loader<DictionaryType>> = {
     en: () => import('@/dictionaries/en.json').then((m) => m.default),
-    es: () => import('@/dictionaries/tr.json').then((m) => m.default),
+    es: () => import('@/dictionaries/es.json').then((m) => m.default),
 };
 
 const contents: Record<Locale, Loader<ContentLanguageType>> = {

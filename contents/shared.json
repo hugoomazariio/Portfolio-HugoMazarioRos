@@ -2,7 +2,7 @@
     "contact": {
         "location": "Madrid, España",
         "email": "hugo.maro05@gmail.com",
-        "phone": "627603108"
+        "phone": "+34627603108"
     },
     "social": [
         {
@@ -15,7 +15,7 @@
         },
         {
             "label": "LinkedIn",
-            "href": "https://www.linkedin.com/in/hugo-mazarío-ros/"
+            "href": "https://linkedin.com/in/hugo-mazarío-ros"
         }
     ],
     "stack": {
@@ -47,9 +47,17 @@
                 "featured": true
             },
             {
-                "name": "Adventure Game Studio",
-                "icon": "/stack/ags.png",
+                "name": "C# (Unity)",
+                "icon": "/stack/csharp.svg",
                 "featured": true
+            },
+            {
+                "name": "Cinemachine",
+                "icon": "/stack/cinemachine.png"
+            },
+            {
+                "name": "Tilemaps",
+                "icon": "/stack/tilemaps.png"
             }
         ],
         "frontend": [
@@ -69,21 +77,12 @@
         "art": [
             {
                 "name": "3ds Max",
-                "icon": "/stack/3dsmax.svg",
-                "featured": true
-            },
-            {
-                "name": "Substance Painter",
-                "icon": "/stack/substance.svg",
+                "icon": "/stack/3dsmax.png",
                 "featured": true
             },
             {
                 "name": "Photoshop",
                 "icon": "/stack/photoshop.svg"
-            },
-            {
-                "name": "Procreate",
-                "icon": "/stack/procreate.svg"
             },
             {
                 "name": "Adobe Premiere",
