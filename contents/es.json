@@ -15,12 +15,12 @@
     "projects": [
         {
             "id": "1",
-            "title": "My Neighbor Totoro (AGS)",
+            "title": "Mi vecino Totoro (AGS)",
             "category": "Videojuego / Aventura Gráfica",
             "year": "2025",
             "description": "Una fiel recreación en forma de aventura gráfica clásica inspirada en el universo de Studio Ghibli. Desarrollada de forma integral utilizando Adventure Game Studio (AGS), donde programé la lógica de las interacciones, los scripts de movimiento de los personajes y la gestión de diálogos y escenas dinámicas.",
-            "image": "/projects/totoro.jpg",
-            "demo": "https://hugoomazariio.itch.io",
+            "image": "/projects/fondoInicio.PNG",
+            "repo": "https://github.com/JooTap/miVecinoTotoro",
             "stack": [
                 "AGS",
                 "Game Design",
@@ -29,11 +29,12 @@
         },
         {
             "id": "2",
-            "title": "Interactive Multimedia Space",
+            "title": "Landing Page Path To Nowhere",
             "category": "Desarrollo Web / Frontend",
             "year": "2026",
             "description": "Proyecto web interactivo enfocado en diseño y desarrollo frontend de alta fidelidad. Desarrollado con tecnologías web puras, aplicando maquetación responsiva, animaciones optimizadas para el navegador y una estructura limpia para asegurar una experiencia de usuario fluida y reactiva en cualquier dispositivo.",
-            "image": "/projects/multimedia_web.jpg",
+            "image": "/projects/multimedia_web.png",
+            "demo": "https://hugoomazariio.github.io/TrabajoMultimedia/",
             "repo": "https://github.com/hugoomazariio/TrabajoMultimedia",
             "stack": [
                 "JavaScript",
@@ -47,7 +48,7 @@
             "category": "Videojuego 2D / Proyecto TFG",
             "year": "2025",
             "description": "Demo jugable de un videojuego en 2D desarrollado en Unity y publicada en Itch.io. Proyecto de desarrollo ampliado que sirvió como mi Trabajo de Fin de Grado (TFG) en DAM, integrando lógicas complejas de gameplay, físicas y pulido visual.",
-            "image": "/projects/eidens_rebirth.jpg",
+            "image": "/projects/Miniatura_Juego.png",
             "demo": "https://hugoomazariio.itch.io",
             "stack": [
                 "Unity",

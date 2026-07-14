@@ -19,8 +19,8 @@
             "category": "Video Game / Graphic Adventure",
             "year": "2025",
             "description": "A faithful recreation of a classic graphic adventure inspired by the Studio Ghibli universe. Built entirely using Adventure Game Studio (AGS), where I programmed interaction logic, character movement scripts, and managed dynamic dialogues and cutscenes.",
-            "image": "/projects/totoro.jpg",
-            "demo": "https://hugoomazariio.itch.io",
+            "image": "/projects/fondoInicio.PNG",
+            "repo": "https://github.com/JooTap/miVecinoTotoro",
             "stack": [
                 "AGS",
                 "Game Design",
@@ -29,11 +29,12 @@
         },
         {
             "id": "2",
-            "title": "Interactive Multimedia Space",
+            "title": "Landing Page Path To Nowhere",
             "category": "Web Development / Frontend",
             "year": "2026",
             "description": "An interactive web project focused on high-fidelity frontend design and development. Built with pure web technologies, implementing responsive layouts, browser-optimized animations, and clean code to ensure a fluid and reactive user experience across devices.",
-            "image": "/projects/multimedia_web.jpg",
+            "image": "/projects/multimedia_web.png",
+            "demo": "https://hugoomazariio.github.io/TrabajoMultimedia/",
             "repo": "https://github.com/hugoomazariio/TrabajoMultimedia",
             "stack": [
                 "JavaScript",
