@@ -31,13 +31,16 @@
                 "featured": true
             },
             {
+                "name": "Python",
+                "icon": "/stack/python.svg",
+                "featured": true
+            }
+        ],
+        "database": [
+            {
                 "name": "MySQL",
                 "icon": "/stack/mysql.svg",
                 "featured": true
-            },
-            {
-                "name": "Python",
-                "icon": "/stack/python.svg"
             }
         ],
         "gamedev": [
@@ -50,28 +53,23 @@
                 "name": "C# (Unity)",
                 "icon": "/stack/csharp.svg",
                 "featured": true
-            },
-            {
-                "name": "Cinemachine",
-                "icon": "/stack/cinemachine.png"
-            },
-            {
-                "name": "Tilemaps",
-                "icon": "/stack/tilemaps.png"
             }
         ],
         "frontend": [
             {
                 "name": "JavaScript",
-                "icon": "/stack/javascript.svg"
+                "icon": "/stack/javascript.svg",
+                "featured": true
             },
             {
                 "name": "HTML5",
-                "icon": "/stack/html5.svg"
+                "icon": "/stack/html5.svg",
+                "featured": true
             },
             {
                 "name": "CSS3",
-                "icon": "/stack/css3.svg"
+                "icon": "/stack/css3.svg",
+                "featured": true
             }
         ],
         "art": [
@@ -82,25 +80,35 @@
             },
             {
                 "name": "Photoshop",
-                "icon": "/stack/photoshop.svg"
+                "icon": "/stack/photoshop.svg",
+                "featured": true
             },
             {
                 "name": "Adobe Premiere",
-                "icon": "/stack/premiere.svg"
+                "icon": "/stack/premiere.svg",
+                "featured": true
+            },
+            {
+                "name": "Procreate",
+                "icon": "/stack/procreate.svg",
+                "featured": true
             }
         ],
         "tools": [
             {
                 "name": "Git",
-                "icon": "/stack/git.svg"
+                "icon": "/stack/git.svg",
+                "featured": true
             },
             {
                 "name": "GitHub",
-                "icon": "/stack/github.svg"
+                "icon": "/stack/github.svg",
+                "featured": true
             },
             {
                 "name": "GitLab",
-                "icon": "/stack/gitlab.svg"
+                "icon": "/stack/gitlab.svg",
+                "featured": true
             }
         ]
     }

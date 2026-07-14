@@ -23,6 +23,14 @@ export default function Stack() {
             items: content.stack?.backend || [],
         },
         {
+            title: dict.gamedevStack,
+            items: content.stack?.gamedev || [],
+        },
+        {
+            title: dict.artStack,
+            items: content.stack?.art || [],
+        },
+        {
             title: dict.databaseStack,
             items: content.stack?.database || [],
         },

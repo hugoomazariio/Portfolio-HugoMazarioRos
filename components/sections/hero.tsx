@@ -148,10 +148,10 @@ export default function Hero() {
                 <div className="w-full mt-auto flex flex-col justify-center relative z-20 mix-blend-difference">
                     <div className="overflow-hidden">
                         <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl 3xl:text-[140px] font-black tracking-tighter leading-[0.85] text-foreground uppercase whitespace-nowrap">
-                            Kintaro
+                            Hugo Mazarío
                             <br />
                             <span className="text-foreground/80">
-                                Portfolio
+                                Ros Portfolio
                             </span>
                         </h1>
                     </div>

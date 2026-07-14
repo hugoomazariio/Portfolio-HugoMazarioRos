@@ -7,6 +7,8 @@ export type StackItem = {
 export type StackCategories = {
     frontend: StackItem[];
     backend: StackItem[];
+    gamedev: StackItem[];
+    art: StackItem[];
     database: StackItem[];
     tools: StackItem[];
 };
