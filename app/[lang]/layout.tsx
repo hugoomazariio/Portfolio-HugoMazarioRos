@@ -15,8 +15,8 @@ const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "HugoMazaríoPortfolio",
-  description: "Creative Developer Portfolio",
+  title: "Hugo Mazarío Ros - Portfolio",
+  description: "Backend Developer Portfolio",
 };
 
 export function generateStaticParams() {
